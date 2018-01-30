@@ -20,5 +20,9 @@ class ThirdViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var YourMatchesLabel: UILabel!
     
+    @IBAction func DisaplyMatchesButton(_ sender: Any) {
+        YourMatchesLabel.text = "Some Match."
+    }
 }

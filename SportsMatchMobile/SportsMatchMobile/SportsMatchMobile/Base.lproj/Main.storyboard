@@ -83,15 +83,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hh-oe-bcK">
+                                <rect key="frame" x="73" y="371" width="229" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Display Your Matches"/>
+                                <connections>
+                                    <action selector="DisaplyMatchesButton:" destination="c3y-H7-XjZ" eventType="touchUpInside" id="SXz-na-Bv3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ui8-DZ-yJp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" id="TU8-x3-GEY"/>
+                    <connections>
+                        <outlet property="YourMatchesLabel" destination="tbN-Iv-If6" id="Zgx-j1-z5E"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgL-C9-YN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1601" y="0.0"/>
+            <point key="canvasLocation" x="1600.8" y="-0.44977511244377816"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
