@@ -91,12 +91,20 @@
                                     <action selector="DisaplyMatchesButton:" destination="c3y-H7-XjZ" eventType="touchUpInside" id="SXz-na-Bv3"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DiG-IO-CKL">
+                                <rect key="frame" x="124" y="321" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ui8-DZ-yJp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" id="TU8-x3-GEY"/>
                     <connections>
+                        <outlet property="MatchesTextInput" destination="DiG-IO-CKL" id="d3T-ul-jwN"/>
                         <outlet property="YourMatchesLabel" destination="tbN-Iv-If6" id="Zgx-j1-z5E"/>
                     </connections>
                 </viewController>

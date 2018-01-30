@@ -22,7 +22,8 @@ class ThirdViewController: UIViewController {
     
     @IBOutlet weak var YourMatchesLabel: UILabel!
     
+    @IBOutlet weak var MatchesTextInput: UITextField!
     @IBAction func DisaplyMatchesButton(_ sender: Any) {
-        YourMatchesLabel.text = "Some Match."
+        YourMatchesLabel.text = MatchesTextInput.text
     }
 }
