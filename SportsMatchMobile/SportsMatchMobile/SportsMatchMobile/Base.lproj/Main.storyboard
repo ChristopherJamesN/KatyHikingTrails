@@ -102,7 +102,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ui8-DZ-yJp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" id="TU8-x3-GEY"/>
+                    <tabBarItem key="tabBarItem" title="Third" image="third" id="TU8-x3-GEY"/>
                     <connections>
                         <outlet property="MatchesTextInput" destination="DiG-IO-CKL" id="d3T-ul-jwN"/>
                         <outlet property="YourMatchesLabel" destination="tbN-Iv-If6" id="Zgx-j1-z5E"/>
@@ -135,5 +135,6 @@
     <resources>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
+        <image name="third" width="30" height="30"/>
     </resources>
 </document>
