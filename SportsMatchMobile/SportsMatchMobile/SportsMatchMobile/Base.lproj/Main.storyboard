@@ -84,6 +84,22 @@
             </objects>
             <point key="canvasLocation" x="1612" y="358"/>
         </scene>
+        <!--UpcomingEventsViewController-->
+        <scene sceneID="GZz-Cn-yKE">
+            <objects>
+                <viewController title="UpcomingEventsViewController" id="DvX-La-rHL" customClass="UpcomingEventsViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJC-JJ-0oC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="019-Hn-rh0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Vqv-0e-uNZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qsv-CI-ltN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2383" y="26"/>
+        </scene>
         <!--Third-->
         <scene sceneID="yI1-Ed-7tO">
             <objects>
@@ -145,6 +161,7 @@
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="c3y-H7-XjZ" kind="relationship" relationship="viewControllers" id="eT3-1H-0UL"/>
                         <segue destination="AtG-eb-BxV" kind="relationship" relationship="viewControllers" id="uOc-3D-vr7"/>
+                        <segue destination="DvX-La-rHL" kind="relationship" relationship="viewControllers" id="zXb-3t-J9R"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
