@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--YourAccountViewController-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="YourAccountViewController" id="9pv-A4-QxB" customClass="FirstViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -39,10 +39,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--OpenMatchesViewController-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="OpenMatchesViewController" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -120,10 +120,10 @@
             </objects>
             <point key="canvasLocation" x="2383" y="26"/>
         </scene>
-        <!--Third-->
+        <!--YourMatchesViewController-->
         <scene sceneID="yI1-Ed-7tO">
             <objects>
-                <viewController title="Third" id="c3y-H7-XjZ" customClass="ThirdViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="YourMatchesViewController" id="c3y-H7-XjZ" customClass="YourMatchesViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6fj-yY-oKT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

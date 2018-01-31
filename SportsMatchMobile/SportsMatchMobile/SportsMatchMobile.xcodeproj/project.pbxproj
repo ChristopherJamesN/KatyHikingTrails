@@ -15,9 +15,9 @@
 		1B322D8B201EC3D3002223B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B322D89201EC3D3002223B3 /* LaunchScreen.storyboard */; };
 		1B322D96201EC3D3002223B3 /* SportsMatchMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322D95201EC3D3002223B3 /* SportsMatchMobileTests.swift */; };
 		1B322DA1201EC3D3002223B3 /* SportsMatchMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DA0201EC3D3002223B3 /* SportsMatchMobileUITests.swift */; };
-		1B322DAF201EC65D002223B3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DAE201EC65D002223B3 /* ThirdViewController.swift */; };
-		1B322DB0201EC65D002223B3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DAE201EC65D002223B3 /* ThirdViewController.swift */; };
-		1B322DB1201EC65D002223B3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DAE201EC65D002223B3 /* ThirdViewController.swift */; };
+		1B322DAF201EC65D002223B3 /* YourMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */; };
+		1B322DB0201EC65D002223B3 /* YourMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */; };
+		1B322DB1201EC65D002223B3 /* YourMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */; };
 		1B322DB32021F9DD002223B3 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */; };
 		1B322DB42021F9DD002223B3 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */; };
 		1B322DB52021F9DD002223B3 /* CreateMatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */; };
@@ -58,7 +58,7 @@
 		1B322D9C201EC3D3002223B3 /* SportsMatchMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsMatchMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B322DA0201EC3D3002223B3 /* SportsMatchMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsMatchMobileUITests.swift; sourceTree = "<group>"; };
 		1B322DA2201EC3D3002223B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1B322DAE201EC65D002223B3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourMatchesViewController.swift; sourceTree = "<group>"; };
 		1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateMatchViewController.swift; sourceTree = "<group>"; };
 		1B322DB62021FAC8002223B3 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,7 +114,7 @@
 				1B322D7E201EC3D3002223B3 /* AppDelegate.swift */,
 				1B322D80201EC3D3002223B3 /* FirstViewController.swift */,
 				1B322D82201EC3D3002223B3 /* SecondViewController.swift */,
-				1B322DAE201EC65D002223B3 /* ThirdViewController.swift */,
+				1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */,
 				1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */,
 				1B322DB62021FAC8002223B3 /* UpcomingEventsViewController.swift */,
 				1B322D84201EC3D3002223B3 /* Main.storyboard */,
@@ -281,7 +281,7 @@
 				1B322DB72021FAC8002223B3 /* UpcomingEventsViewController.swift in Sources */,
 				1B322D83201EC3D3002223B3 /* SecondViewController.swift in Sources */,
 				1B322D7F201EC3D3002223B3 /* AppDelegate.swift in Sources */,
-				1B322DAF201EC65D002223B3 /* ThirdViewController.swift in Sources */,
+				1B322DAF201EC65D002223B3 /* YourMatchesViewController.swift in Sources */,
 				1B322D81201EC3D3002223B3 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,7 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B322DB0201EC65D002223B3 /* ThirdViewController.swift in Sources */,
+				1B322DB0201EC65D002223B3 /* YourMatchesViewController.swift in Sources */,
 				1B322D96201EC3D3002223B3 /* SportsMatchMobileTests.swift in Sources */,
 				1B322DB42021F9DD002223B3 /* CreateMatchViewController.swift in Sources */,
 				1B322DB82021FAC8002223B3 /* UpcomingEventsViewController.swift in Sources */,
@@ -301,7 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B322DB1201EC65D002223B3 /* ThirdViewController.swift in Sources */,
+				1B322DB1201EC65D002223B3 /* YourMatchesViewController.swift in Sources */,
 				1B322DA1201EC3D3002223B3 /* SportsMatchMobileUITests.swift in Sources */,
 				1B322DB52021F9DD002223B3 /* CreateMatchViewController.swift in Sources */,
 				1B322DB92021FAC8002223B3 /* UpcomingEventsViewController.swift in Sources */,
