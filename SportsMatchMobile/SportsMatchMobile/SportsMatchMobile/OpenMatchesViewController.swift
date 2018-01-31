@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class OpenMatchesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

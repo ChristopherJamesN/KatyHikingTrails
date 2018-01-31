@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B322D7F201EC3D3002223B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322D7E201EC3D3002223B3 /* AppDelegate.swift */; };
-		1B322D81201EC3D3002223B3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322D80201EC3D3002223B3 /* FirstViewController.swift */; };
-		1B322D83201EC3D3002223B3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322D82201EC3D3002223B3 /* SecondViewController.swift */; };
+		1B322D81201EC3D3002223B3 /* YourAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322D80201EC3D3002223B3 /* YourAccountViewController.swift */; };
+		1B322D83201EC3D3002223B3 /* OpenMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322D82201EC3D3002223B3 /* OpenMatchesViewController.swift */; };
 		1B322D86201EC3D3002223B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B322D84201EC3D3002223B3 /* Main.storyboard */; };
 		1B322D88201EC3D3002223B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B322D87201EC3D3002223B3 /* Assets.xcassets */; };
 		1B322D8B201EC3D3002223B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B322D89201EC3D3002223B3 /* LaunchScreen.storyboard */; };
@@ -46,8 +46,8 @@
 /* Begin PBXFileReference section */
 		1B322D7B201EC3D3002223B3 /* SportsMatchMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsMatchMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B322D7E201EC3D3002223B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B322D80201EC3D3002223B3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1B322D82201EC3D3002223B3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1B322D80201EC3D3002223B3 /* YourAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourAccountViewController.swift; sourceTree = "<group>"; };
+		1B322D82201EC3D3002223B3 /* OpenMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMatchesViewController.swift; sourceTree = "<group>"; };
 		1B322D85201EC3D3002223B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B322D87201EC3D3002223B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B322D8A201EC3D3002223B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				1B322D7E201EC3D3002223B3 /* AppDelegate.swift */,
-				1B322D80201EC3D3002223B3 /* FirstViewController.swift */,
-				1B322D82201EC3D3002223B3 /* SecondViewController.swift */,
+				1B322D80201EC3D3002223B3 /* YourAccountViewController.swift */,
+				1B322D82201EC3D3002223B3 /* OpenMatchesViewController.swift */,
 				1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */,
 				1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */,
 				1B322DB62021FAC8002223B3 /* UpcomingEventsViewController.swift */,
@@ -279,10 +279,10 @@
 			files = (
 				1B322DB32021F9DD002223B3 /* CreateMatchViewController.swift in Sources */,
 				1B322DB72021FAC8002223B3 /* UpcomingEventsViewController.swift in Sources */,
-				1B322D83201EC3D3002223B3 /* SecondViewController.swift in Sources */,
+				1B322D83201EC3D3002223B3 /* OpenMatchesViewController.swift in Sources */,
 				1B322D7F201EC3D3002223B3 /* AppDelegate.swift in Sources */,
 				1B322DAF201EC65D002223B3 /* YourMatchesViewController.swift in Sources */,
-				1B322D81201EC3D3002223B3 /* FirstViewController.swift in Sources */,
+				1B322D81201EC3D3002223B3 /* YourAccountViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
