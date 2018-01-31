@@ -88,7 +88,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KF6-6r-zjo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Rkt-O0-JxY"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="fourth" id="Rkt-O0-JxY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtB-Mc-6IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +114,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="019-Hn-rh0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Vqv-0e-uNZ"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="fifth" id="Vqv-0e-uNZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsv-CI-ltN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,7 +190,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="fifth" width="30" height="30"/>
         <image name="first" width="30" height="30"/>
+        <image name="fourth" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
         <image name="third" width="30" height="30"/>
     </resources>
