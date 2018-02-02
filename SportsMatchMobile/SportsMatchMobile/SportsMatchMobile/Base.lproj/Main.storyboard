@@ -33,7 +33,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Your Account" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -62,7 +62,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Open Matches" image="second" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +88,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KF6-6r-zjo"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="fourth" id="Rkt-O0-JxY"/>
+                    <tabBarItem key="tabBarItem" title="Create Match" image="fourth" selectedImage="fourth" id="Rkt-O0-JxY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtB-Mc-6IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +114,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="019-Hn-rh0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="fifth" id="Vqv-0e-uNZ"/>
+                    <tabBarItem key="tabBarItem" title="Upcoming Events" image="fifth" selectedImage="fifth" id="Vqv-0e-uNZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsv-CI-ltN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +157,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ui8-DZ-yJp"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Third" image="third" id="TU8-x3-GEY"/>
+                    <tabBarItem key="tabBarItem" title="Your Matches" image="third" id="TU8-x3-GEY"/>
                     <connections>
                         <outlet property="MatchesTextInput" destination="DiG-IO-CKL" id="d3T-ul-jwN"/>
                         <outlet property="YourMatchesLabel" destination="tbN-Iv-If6" id="Zgx-j1-z5E"/>
