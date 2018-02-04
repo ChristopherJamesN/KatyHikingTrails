@@ -10,13 +10,17 @@ import UIKit
 
 class UpcomingEventsViewController: UIViewController {
     
+    @IBOutlet weak var UpcomingEventsLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        UpcomingEventsLabel.text = event1?.participants
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
+    
+    let event1 = Event(participants: "Lakers versus Thunder", commence: 111234, status: "Ongoing", sport: "Basketball", winner: "Unknown")
 }

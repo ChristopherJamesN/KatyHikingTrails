@@ -104,15 +104,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-0P-woM">
+                                <rect key="frame" x="74" y="85" width="226" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="019-Hn-rh0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upcoming Events" image="fifth" selectedImage="fifth" id="Vqv-0e-uNZ"/>
+                    <connections>
+                        <outlet property="UpcomingEventsLabel" destination="fh9-0P-woM" id="W8g-ln-J2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsv-CI-ltN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2383" y="26"/>
+            <point key="canvasLocation" x="2381.5999999999999" y="25.637181409295355"/>
         </scene>
         <!--YourMatchesViewController-->
         <scene sceneID="yI1-Ed-7tO">
