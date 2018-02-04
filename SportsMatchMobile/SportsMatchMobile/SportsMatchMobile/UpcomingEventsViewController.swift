@@ -14,7 +14,7 @@ class UpcomingEventsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UpcomingEventsLabel.text = event1?.participants
+        UpcomingEventsLabel.text = "No upcoming events."
 
         let session = URLSession.shared
         
@@ -58,6 +58,4 @@ class UpcomingEventsViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    let event1 = Event(participants: "Lakers versus Thunder", commence: 111234, status: "Ongoing", sport: "Basketball", winner: "Unknown")
 }

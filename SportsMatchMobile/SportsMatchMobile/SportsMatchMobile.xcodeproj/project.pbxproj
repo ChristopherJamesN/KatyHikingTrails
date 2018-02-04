@@ -27,6 +27,7 @@
 		1BF141162026B13E006C5D43 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF141152026B13E006C5D43 /* Match.swift */; };
 		1BF1411820275FAC006C5D43 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1411720275FAC006C5D43 /* Event.swift */; };
 		1BF1411A202780A6006C5D43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF14119202780A6006C5D43 /* User.swift */; };
+		1BF1411C2027BD01006C5D43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1411B2027BD01006C5D43 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		1BF141152026B13E006C5D43 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		1BF1411720275FAC006C5D43 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		1BF14119202780A6006C5D43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1BF1411B2027BD01006C5D43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */,
 				1B322DB22021F9DD002223B3 /* CreateMatchViewController.swift */,
 				1B322DB62021FAC8002223B3 /* UpcomingEventsViewController.swift */,
+				1BF1411B2027BD01006C5D43 /* LoginViewController.swift */,
 				1B322D84201EC3D3002223B3 /* Main.storyboard */,
 				1B322D87201EC3D3002223B3 /* Assets.xcassets */,
 				1B322D89201EC3D3002223B3 /* LaunchScreen.storyboard */,
@@ -294,6 +297,7 @@
 				1BF1411A202780A6006C5D43 /* User.swift in Sources */,
 				1B322DAF201EC65D002223B3 /* YourMatchesViewController.swift in Sources */,
 				1B322D81201EC3D3002223B3 /* YourAccountViewController.swift in Sources */,
+				1BF1411C2027BD01006C5D43 /* LoginViewController.swift in Sources */,
 				1BF141162026B13E006C5D43 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
