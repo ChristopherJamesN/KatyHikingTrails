@@ -26,6 +26,7 @@
 		1B322DB92021FAC8002223B3 /* UpcomingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B322DB62021FAC8002223B3 /* UpcomingEventsViewController.swift */; };
 		1BF141162026B13E006C5D43 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF141152026B13E006C5D43 /* Match.swift */; };
 		1BF1411820275FAC006C5D43 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF1411720275FAC006C5D43 /* Event.swift */; };
+		1BF1411A202780A6006C5D43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF14119202780A6006C5D43 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		1B322DB62021FAC8002223B3 /* UpcomingEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsViewController.swift; sourceTree = "<group>"; };
 		1BF141152026B13E006C5D43 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
 		1BF1411720275FAC006C5D43 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		1BF14119202780A6006C5D43 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				1B322D7E201EC3D3002223B3 /* AppDelegate.swift */,
 				1BF1411720275FAC006C5D43 /* Event.swift */,
 				1BF141152026B13E006C5D43 /* Match.swift */,
+				1BF14119202780A6006C5D43 /* User.swift */,
 				1B322D80201EC3D3002223B3 /* YourAccountViewController.swift */,
 				1B322D82201EC3D3002223B3 /* OpenMatchesViewController.swift */,
 				1B322DAE201EC65D002223B3 /* YourMatchesViewController.swift */,
@@ -288,6 +291,7 @@
 				1B322DB72021FAC8002223B3 /* UpcomingEventsViewController.swift in Sources */,
 				1B322D83201EC3D3002223B3 /* OpenMatchesViewController.swift in Sources */,
 				1B322D7F201EC3D3002223B3 /* AppDelegate.swift in Sources */,
+				1BF1411A202780A6006C5D43 /* User.swift in Sources */,
 				1B322DAF201EC65D002223B3 /* YourMatchesViewController.swift in Sources */,
 				1B322D81201EC3D3002223B3 /* YourAccountViewController.swift in Sources */,
 				1BF141162026B13E006C5D43 /* Match.swift in Sources */,

@@ -9,20 +9,20 @@
 import UIKit
 
 class Event {
-    var description: String
-    var chance: Int
-    var value: Int
-    var category: String
-    var event: String
+    var participants: String
+    var commence: Int
+    var status: String
+    var sport: String
+    var winner: String
     
-    init?(description:String, chance:Int, value:Int, category:String, event:String) {
-        if description.isEmpty || chance < 0 || value < 0 || category.isEmpty || event.isEmpty {
+    init?(participants:String, commence:Int, status:String, sport:String, winner:String) {
+        if participants.isEmpty || commence < 0 || status.isEmpty || sport.isEmpty || winner.isEmpty {
             return nil
         }
-        self.description = description
-        self.chance = chance
-        self.value = value
-        self.category = category
-        self.event = event
+        self.participants = participants
+        self.commence = commence
+        self.status = status
+        self.sport = sport
+        self.winner = winner
     }
 }
