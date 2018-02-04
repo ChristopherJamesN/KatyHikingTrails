@@ -9,20 +9,14 @@
 import UIKit
 
 class User {
-    var description: String
-    var chance: Int
-    var value: Int
-    var category: String
-    var event: String
+    var email: String
+    var points: Int
     
-    init?(description:String, chance:Int, value:Int, category:String, event:String) {
-        if description.isEmpty || chance < 0 || value < 0 || category.isEmpty || event.isEmpty {
+    init?(email:String, points:Int) {
+        if email.isEmpty || points < 0 {
             return nil
         }
-        self.description = description
-        self.chance = chance
-        self.value = value
-        self.category = category
-        self.event = event
+        self.email = email
+        self.points = points
     }
 }
