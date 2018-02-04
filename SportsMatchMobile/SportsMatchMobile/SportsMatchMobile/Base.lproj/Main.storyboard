@@ -123,7 +123,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="5bV-rv-eok">
-                                <rect key="frame" x="113" y="20" width="148" height="118.5"/>
+                                <rect key="frame" x="113" y="20" width="148" height="187.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DiG-IO-CKL">
                                         <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
@@ -144,10 +144,15 @@
                                             <action selector="DisaplyMatchesButton:" destination="c3y-H7-XjZ" eventType="touchUpInside" id="SXz-na-Bv3"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anl-TR-Up8">
+                                        <rect key="frame" x="0.0" y="137.5" width="148" height="50"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="7Hh-oe-bcK" firstAttribute="top" secondItem="tbN-Iv-If6" secondAttribute="bottom" constant="19" id="63v-Zq-ILG"/>
-                                    <constraint firstAttribute="bottom" secondItem="7Hh-oe-bcK" secondAttribute="bottom" id="OrH-Hx-jCQ"/>
                                     <constraint firstItem="7Hh-oe-bcK" firstAttribute="leading" secondItem="5bV-rv-eok" secondAttribute="leading" id="aqL-GK-TAp"/>
                                     <constraint firstAttribute="trailing" secondItem="7Hh-oe-bcK" secondAttribute="trailing" id="ikh-ga-DH1"/>
                                 </constraints>
@@ -158,13 +163,13 @@
                             <constraint firstItem="5bV-rv-eok" firstAttribute="top" secondItem="Ui8-DZ-yJp" secondAttribute="top" id="28o-Cs-B1t"/>
                             <constraint firstItem="Ui8-DZ-yJp" firstAttribute="trailing" secondItem="5bV-rv-eok" secondAttribute="trailing" constant="114" id="UMS-Zw-VYa"/>
                             <constraint firstItem="5bV-rv-eok" firstAttribute="leading" secondItem="Ui8-DZ-yJp" secondAttribute="leading" constant="113" id="blV-Ok-Gxv"/>
-                            <constraint firstItem="Ui8-DZ-yJp" firstAttribute="bottom" secondItem="5bV-rv-eok" secondAttribute="bottom" constant="479.5" id="qEr-yU-UEo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ui8-DZ-yJp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Your Matches" image="third" id="TU8-x3-GEY"/>
                     <connections>
                         <outlet property="MatchesTextInput" destination="DiG-IO-CKL" id="d3T-ul-jwN"/>
+                        <outlet property="StoredMatchesLabel" destination="anl-TR-Up8" id="5eA-OK-lip"/>
                         <outlet property="YourMatchesLabel" destination="tbN-Iv-If6" id="Zgx-j1-z5E"/>
                     </connections>
                 </viewController>
