@@ -91,7 +91,7 @@
         <!--Login-->
         <scene sceneID="lym-mV-kSf">
             <objects>
-                <viewController id="645-Kr-pAN" sceneMemberID="viewController">
+                <viewController id="645-Kr-pAN" customClass="LoginViewController" customModule="SportsMatchMobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ifP-fH-Wum">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,12 +121,20 @@
                                 <rect key="frame" x="89" y="134" width="197" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="LoginButton:" destination="645-Kr-pAN" eventType="touchUpInside" id="c5j-K6-4NX"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OJv-bp-ibX"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Login" image="second" id="H5e-0C-c3g"/>
+                    <connections>
+                        <outlet property="EmailTextBox" destination="xlf-Rg-4UM" id="4E1-cr-GX5"/>
+                        <outlet property="LoginLabel" destination="p42-pR-h6g" id="FXU-GG-CYQ"/>
+                        <outlet property="PasswordTextBox" destination="SLj-8E-ILA" id="5sb-4C-gfU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nk7-5t-P4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
