@@ -184,60 +184,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="5bV-rv-eok">
-                                <rect key="frame" x="113" y="20" width="148" height="187.5"/>
-                                <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DiG-IO-CKL">
-                                        <rect key="frame" x="0.0" y="0.0" width="148" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Matches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbN-Iv-If6">
-                                        <rect key="frame" x="0.0" y="49" width="148" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hh-oe-bcK">
-                                        <rect key="frame" x="0.0" y="88.5" width="148" height="30"/>
-                                        <state key="normal" title="Display Your Matches"/>
-                                        <connections>
-                                            <action selector="DisaplyMatchesButton:" destination="c3y-H7-XjZ" eventType="touchUpInside" id="SXz-na-Bv3"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="anl-TR-Up8">
-                                        <rect key="frame" x="0.0" y="137.5" width="148" height="50"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="7Hh-oe-bcK" firstAttribute="top" secondItem="tbN-Iv-If6" secondAttribute="bottom" constant="19" id="63v-Zq-ILG"/>
-                                    <constraint firstItem="7Hh-oe-bcK" firstAttribute="leading" secondItem="5bV-rv-eok" secondAttribute="leading" id="aqL-GK-TAp"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Hh-oe-bcK" secondAttribute="trailing" id="ikh-ga-DH1"/>
-                                </constraints>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Matches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCv-Vn-E0e">
+                                <rect key="frame" x="119" y="20" width="137" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="er1-MY-cYS">
+                                <rect key="frame" x="67" y="49" width="240" height="569"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="5bV-rv-eok" firstAttribute="top" secondItem="Ui8-DZ-yJp" secondAttribute="top" id="28o-Cs-B1t"/>
-                            <constraint firstItem="Ui8-DZ-yJp" firstAttribute="trailing" secondItem="5bV-rv-eok" secondAttribute="trailing" constant="114" id="UMS-Zw-VYa"/>
-                            <constraint firstItem="5bV-rv-eok" firstAttribute="leading" secondItem="Ui8-DZ-yJp" secondAttribute="leading" constant="113" id="blV-Ok-Gxv"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Ui8-DZ-yJp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Your Matches" image="third" id="TU8-x3-GEY"/>
                     <connections>
-                        <outlet property="MatchesTextInput" destination="DiG-IO-CKL" id="d3T-ul-jwN"/>
-                        <outlet property="StoredMatchesLabel" destination="anl-TR-Up8" id="5eA-OK-lip"/>
-                        <outlet property="YourMatchesLabel" destination="tbN-Iv-If6" id="Zgx-j1-z5E"/>
+                        <outlet property="YourMatchesLabel" destination="DCv-Vn-E0e" id="oVN-Pu-W2K"/>
+                        <outlet property="YourMatchesTableView" destination="er1-MY-cYS" id="Z9u-dQ-Yhp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GgL-C9-YN2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1609" y="-321"/>
+            <point key="canvasLocation" x="1608.8" y="-321.58920539730138"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
