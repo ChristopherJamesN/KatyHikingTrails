@@ -10,11 +10,9 @@ import UIKit
 
 class UpcomingEventsViewController: UIViewController {
     
-    @IBOutlet weak var UpcomingEventsLabel: UILabel!
-    
+    @IBOutlet weak var UpcomingEventsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        UpcomingEventsLabel.text = "No upcoming events."
 
         let session = URLSession.shared
         
@@ -36,7 +34,6 @@ class UpcomingEventsViewController: UIViewController {
                         if let mainDictionary = jsonObj!.value(forKey: "main") as? NSDictionary {
                             if let particpants = mainDictionary.value(forKey: "participants") {
                                 DispatchQueue.main.async {
-                                    self.UpcomingEventsLabel.text = "\(particpants)"
                                 }
                             }
                         } else {

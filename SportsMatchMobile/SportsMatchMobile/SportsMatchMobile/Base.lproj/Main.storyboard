@@ -178,25 +178,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fh9-0P-woM">
-                                <rect key="frame" x="74" y="85" width="226" height="21"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d6N-1z-Gha">
+                                <rect key="frame" x="16" y="71" width="343" height="547"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="019-Hn-rh0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upcoming Events" image="fifth" selectedImage="fifth" id="Vqv-0e-uNZ"/>
                     <connections>
-                        <outlet property="UpcomingEventsLabel" destination="fh9-0P-woM" id="W8g-ln-J2O"/>
+                        <outlet property="UpcomingEventsTableView" destination="d6N-1z-Gha" id="Jef-vD-miD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qsv-CI-ltN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2431" y="-321"/>
+            <point key="canvasLocation" x="2429.5999999999999" y="-321.58920539730138"/>
         </scene>
         <!--YourMatchesViewController-->
         <scene sceneID="yI1-Ed-7tO">
