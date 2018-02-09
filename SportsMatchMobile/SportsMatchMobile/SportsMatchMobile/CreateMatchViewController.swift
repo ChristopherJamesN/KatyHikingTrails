@@ -12,6 +12,16 @@ class CreateMatchViewController: UIViewController, UIPickerViewDataSource, UIPic
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return myValues.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return myValues[row] as? String
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        print("row: \(row)")
+        print("value: \(myValues[row])")
+    }
     
     
     @IBOutlet weak var SportPickerView: UIPickerView!
@@ -28,6 +38,12 @@ class CreateMatchViewController: UIViewController, UIPickerViewDataSource, UIPic
         super.viewDidLoad()
         OutcomePickerView.dataSource = self
         OutcomePickerView.delegate = self
+        
+        SportPickerView.dataSource = self
+        SportPickerView.delegate = self
+        
+        EventPickerView.dataSource = self
+        EventPickerView.delegate = self
     }
     
     func numberOfComponentsInPickerView(OutcomePickerView: UIPickerView) -> Int {
