@@ -144,12 +144,24 @@
                                 <rect key="frame" x="162" y="584" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="CreateMatchButton:" destination="AtG-eb-BxV" eventType="touchUpInside" id="HVn-pg-iXZ"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="KF6-6r-zjo"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create Match" image="fourth" selectedImage="fourth" id="Rkt-O0-JxY"/>
+                    <connections>
+                        <outlet property="ChanceTextField" destination="6u0-ap-CNP" id="fa3-57-Io5"/>
+                        <outlet property="EventPickerView" destination="fZp-6I-C7F" id="zBr-hK-vlp"/>
+                        <outlet property="OutcomePickerView" destination="1LS-me-IPL" id="2el-ay-MWr"/>
+                        <outlet property="PointsTextField" destination="dKu-ZG-Rum" id="FiQ-KT-vDX"/>
+                        <outlet property="SportPickerView" destination="xI9-Fw-CdD" id="W8I-iV-v6g"/>
+                        <outlet property="Team1Label" destination="0En-nu-ayc" id="EN0-ce-wOl"/>
+                        <outlet property="Team2Label" destination="4dN-fF-Yk8" id="Feo-4X-fJ4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PtB-Mc-6IW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
