@@ -36,8 +36,16 @@ class CreateMatchViewController: UIViewController, UIPickerViewDataSource, UIPic
         }
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        print("row: \(row)")
-        print("value: \(myValues[row])")
+        if pickerView == OutcomePickerView {
+            print("row: \(row)")
+            print("value: \(myValues[row])")
+        } else if pickerView == SportPickerView {
+            print("row: \(row)")
+            print("value: \(mySports[row])")
+        } else {
+            print("row: \(row)")
+            print("value: \(myEvents[row])")
+        }
     }
     
     
