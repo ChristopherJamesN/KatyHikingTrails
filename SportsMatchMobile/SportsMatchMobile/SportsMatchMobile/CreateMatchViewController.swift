@@ -45,9 +45,10 @@ class CreateMatchViewController: UIViewController, UIPickerViewDataSource, UIPic
         } else {
             print("row: \(row)")
             print("value: \(myEvents[row])")
-            Team1Label.text = myEvents[row] as? String
-            Team2Label.text = myEvents[row] as? String
-            
+            let teams = myEvents[row] as? String
+            let teamsArr = teams?.components(separatedBy: "vs")
+            Team1Label.text = teamsArr![0]
+            Team2Label.text = teamsArr![1]
         }
     }
     
