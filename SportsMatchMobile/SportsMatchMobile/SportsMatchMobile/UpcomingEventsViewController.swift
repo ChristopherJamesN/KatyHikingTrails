@@ -28,20 +28,6 @@ class UpcomingEventsViewController: UIViewController {
                     
                     let dataString = String(data: data, encoding: String.Encoding.utf8)
                     print("All the upcoming event data:\n\(dataString!)")
-                    
-                    if let jsonObj = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? NSDictionary {
-                        
-                        if let mainDictionary = jsonObj!.value(forKey: "main") as? NSDictionary {
-                            if let particpants = mainDictionary.value(forKey: "participants") {
-                                DispatchQueue.main.async {
-                                }
-                            }
-                        } else {
-                            print("Error: unable to find events in dictionary")
-                        }
-                    } else {
-                        print("Error: unable to convert json data")
-                    }
                 } else {
                     print("Error: did not receive data")
                 }
