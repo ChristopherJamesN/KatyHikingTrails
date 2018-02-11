@@ -25,11 +25,15 @@ class UpcomingEventsViewController: UIViewController {
                 print("Error:\n\(error)")
             } else {
                 if let data = data {
-                    
                     let dataString = String(data: data, encoding: String.Encoding.utf8)
                     print("All the upcoming event data:\n\(dataString!)")
+                    let dataStringArray = dataString?.split(separator: "}")
+                    print(dataStringArray![0])
                 } else {
                     print("Error: did not receive data")
+                }
+                for i in 1...3 {
+                    print(data!)
                 }
             }
         }
