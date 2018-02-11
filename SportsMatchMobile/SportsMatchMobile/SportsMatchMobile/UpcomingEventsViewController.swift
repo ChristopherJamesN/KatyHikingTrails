@@ -8,11 +8,32 @@
 
 import UIKit
 
-class UpcomingEventsViewController: UIViewController {
+class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    var publicJsonArray = [Any]()
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return publicJsonArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cellIdentifier = "EventTableViewCell"
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
+            fatalError("The dequeued cell is not an instance of EventTableViewCell.")
+        }
+        let event = publicJsonArray[indexPath.row]
+        cell.ParticipantsLabel.text = "text"
+        cell.StartTimeLabel.text = "text"
+        cell.SportLabel.text = "text"
+        return cell
+        }
+    
     
     @IBOutlet weak var UpcomingEventsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        UpcomingEventsTableView.delegate = self
+        UpcomingEventsTableView.dataSource = self
 
         let session = URLSession.shared
         
@@ -26,15 +47,14 @@ class UpcomingEventsViewController: UIViewController {
             } else {
                 if let data = data {
                     let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                    print(json!)
                     let jsonArray = json! as? Array<Any>
-                    print(jsonArray![0])
+                    self.publicJsonArray = jsonArray!
+                    print(self.publicJsonArray)
                 } else {
                     print("Error: did not receive data")
                 }
             }
         }
-        
         dataTask.resume()
         
     }
