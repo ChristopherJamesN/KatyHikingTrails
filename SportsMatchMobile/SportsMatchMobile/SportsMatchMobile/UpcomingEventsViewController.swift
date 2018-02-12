@@ -12,7 +12,12 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
     var publicJsonArray = [Any]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return publicJsonArray.count
+       return 5
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
+    {
+        return 120
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -21,7 +26,6 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
             fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
-        let event = publicJsonArray[indexPath.row]
         cell.ParticipantsLabel.text = "text"
         cell.StartTimeLabel.text = "text"
         cell.SportLabel.text = "text"
