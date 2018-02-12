@@ -9,10 +9,42 @@
 import UIKit
 
 class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    @IBOutlet weak var UpcomingEventsTableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        UpcomingEventsTableView.delegate = self
+        UpcomingEventsTableView.dataSource = self
+        UpcomingEventsTableView.reloadData()
+
+        let session = URLSession.shared
+        let eventsURL = URL(string:"https://sports-match.herokuapp.com/home.json")!
+        let dataTask = session.dataTask(with: eventsURL) {
+            (data: Data?, response: URLResponse?, error: Error?) in
+            if let error = error {
+                print("Error:\n\(error)")
+            } else {
+                if let data = data {
+                    let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                    let jsonArray = json! as? Array<Any>
+                    self.publicJsonArray += jsonArray!
+                    print(self.publicJsonArray)
+                } else {
+                    print("Error: did not receive data")
+                }
+            }
+        }
+        dataTask.resume()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
     var publicJsonArray = [Any]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-       return 5
+        return publicJsonArray.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
@@ -26,44 +58,10 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
             fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
-        cell.ParticipantsLabel.text = "text"
+        cell.ParticipantsLabel.text = publicJsonArray[indexPath.row] as? String
         cell.StartTimeLabel.text = "text"
         cell.SportLabel.text = "text"
         return cell
-        }
-    
-    
-    @IBOutlet weak var UpcomingEventsTableView: UITableView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        UpcomingEventsTableView.delegate = self
-        UpcomingEventsTableView.dataSource = self
-
-        let session = URLSession.shared
-        
-        let eventsURL = URL(string:"https://sports-match.herokuapp.com/home.json")!
-        
-        let dataTask = session.dataTask(with: eventsURL) {
-            (data: Data?, response: URLResponse?, error: Error?) in
-            
-            if let error = error {
-                print("Error:\n\(error)")
-            } else {
-                if let data = data {
-                    let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                    let jsonArray = json! as? Array<Any>
-                    self.publicJsonArray = jsonArray!
-                    print(self.publicJsonArray)
-                } else {
-                    print("Error: did not receive data")
-                }
-            }
-        }
-        dataTask.resume()
-        
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
 }
