@@ -26,8 +26,12 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
                 if let data = data {
                     DispatchQueue.main.async {
                         let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                        let jsonArray = json! as? Array<Any>
-                        self.publicJsonArray += jsonArray!
+                        var jsonArray = String()
+                        if let json = String(data: data, encoding: .utf8) {
+                            print(json)
+                            jsonArray = json
+                        }
+                        self.publicJsonArray += jsonArray
                         print(self.publicJsonArray)
                         self.UpcomingEventsTableView.reloadData()
                     }
@@ -43,7 +47,7 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         super.didReceiveMemoryWarning()
     }
     
-    var publicJsonArray = [Any]()
+    var publicJsonArray = String()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return publicJsonArray.count
@@ -60,8 +64,8 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
             fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
-        cell.ParticipantsLabel.text = publicJsonArray[indexPath.row] as? String
-        cell.StartTimeLabel.text = "text"
+        cell.ParticipantsLabel.text = publicJsonArray
+        cell.StartTimeLabel.text = publicJsonArray
         cell.SportLabel.text = "text"
         return cell
     }
