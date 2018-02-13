@@ -15,7 +15,6 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         super.viewDidLoad()
         UpcomingEventsTableView.delegate = self
         UpcomingEventsTableView.dataSource = self
-        UpcomingEventsTableView.reloadData()
 
         let session = URLSession.shared
         let eventsURL = URL(string:"https://sports-match.herokuapp.com/home.json")!
@@ -25,10 +24,13 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
                 print("Error:\n\(error)")
             } else {
                 if let data = data {
-                    let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                    let jsonArray = json! as? Array<Any>
-                    self.publicJsonArray += jsonArray!
-                    print(self.publicJsonArray)
+                    DispatchQueue.main.async {
+                        let json = try? JSONSerialization.jsonObject(with: data, options: [])
+                        let jsonArray = json! as? Array<Any>
+                        self.publicJsonArray += jsonArray!
+                        print(self.publicJsonArray)
+                        self.UpcomingEventsTableView.reloadData()
+                    }
                 } else {
                     print("Error: did not receive data")
                 }
