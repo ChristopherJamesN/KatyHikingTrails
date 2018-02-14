@@ -28,6 +28,9 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="All Trails" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="AllTrailsTableView" destination="h2e-oq-Xw4" id="5ct-Rw-xzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -51,6 +54,9 @@
                         <viewLayoutGuide key="safeArea" id="xFp-R9-HhO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Barker Trails" image="first" id="URm-mm-I8R"/>
+                    <connections>
+                        <outlet property="BarkerTrailsTableView" destination="qJq-tB-ffe" id="pfu-CL-1GT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8X-n2-Jl0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -74,6 +80,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Addicks Trails" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="AddicksTrailsTableView" destination="oFO-oH-K9n" id="OXK-49-9k3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>

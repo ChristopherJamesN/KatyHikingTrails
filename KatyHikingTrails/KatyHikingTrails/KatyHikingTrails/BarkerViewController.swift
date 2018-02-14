@@ -9,7 +9,8 @@
 import UIKit
 
 class BarkerViewController: UIViewController {
-
+    @IBOutlet weak var BarkerTrailsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

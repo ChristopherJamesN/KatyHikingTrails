@@ -9,7 +9,8 @@
 import UIKit
 
 class AddicksViewController: UIViewController {
-
+    @IBOutlet weak var AddicksTrailsTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
