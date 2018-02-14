@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		1BAC98C32033E2F80059D2C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98C22033E2F80059D2C7 /* AppDelegate.swift */; };
-		1BAC98C52033E2F80059D2C7 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98C42033E2F80059D2C7 /* FirstViewController.swift */; };
-		1BAC98C72033E2F80059D2C7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98C62033E2F80059D2C7 /* SecondViewController.swift */; };
+		1BAC98C52033E2F80059D2C7 /* AllTrailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98C42033E2F80059D2C7 /* AllTrailsViewController.swift */; };
+		1BAC98C72033E2F80059D2C7 /* AddicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98C62033E2F80059D2C7 /* AddicksViewController.swift */; };
 		1BAC98CA2033E2F80059D2C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAC98C82033E2F80059D2C7 /* Main.storyboard */; };
 		1BAC98CC2033E2F80059D2C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BAC98CB2033E2F80059D2C7 /* Assets.xcassets */; };
 		1BAC98CF2033E2F80059D2C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BAC98CD2033E2F80059D2C7 /* LaunchScreen.storyboard */; };
 		1BAC98DA2033E2F80059D2C7 /* KatyHikingTrailsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98D92033E2F80059D2C7 /* KatyHikingTrailsTests.swift */; };
 		1BAC98E52033E2F80059D2C7 /* KatyHikingTrailsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98E42033E2F80059D2C7 /* KatyHikingTrailsUITests.swift */; };
+		1BAC98F32033EB9D0059D2C7 /* BarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */; };
+		1BAC98F42033EB9D0059D2C7 /* BarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */; };
+		1BAC98F52033EB9D0059D2C7 /* BarkerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,8 @@
 /* Begin PBXFileReference section */
 		1BAC98BF2033E2F80059D2C7 /* KatyHikingTrails.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KatyHikingTrails.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAC98C22033E2F80059D2C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1BAC98C42033E2F80059D2C7 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		1BAC98C62033E2F80059D2C7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1BAC98C42033E2F80059D2C7 /* AllTrailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllTrailsViewController.swift; sourceTree = "<group>"; };
+		1BAC98C62033E2F80059D2C7 /* AddicksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddicksViewController.swift; sourceTree = "<group>"; };
 		1BAC98C92033E2F80059D2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BAC98CB2033E2F80059D2C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BAC98CE2033E2F80059D2C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		1BAC98E02033E2F80059D2C7 /* KatyHikingTrailsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KatyHikingTrailsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BAC98E42033E2F80059D2C7 /* KatyHikingTrailsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KatyHikingTrailsUITests.swift; sourceTree = "<group>"; };
 		1BAC98E62033E2F80059D2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarkerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				1BAC98C22033E2F80059D2C7 /* AppDelegate.swift */,
-				1BAC98C42033E2F80059D2C7 /* FirstViewController.swift */,
-				1BAC98C62033E2F80059D2C7 /* SecondViewController.swift */,
+				1BAC98C42033E2F80059D2C7 /* AllTrailsViewController.swift */,
+				1BAC98C62033E2F80059D2C7 /* AddicksViewController.swift */,
+				1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */,
 				1BAC98C82033E2F80059D2C7 /* Main.storyboard */,
 				1BAC98CB2033E2F80059D2C7 /* Assets.xcassets */,
 				1BAC98CD2033E2F80059D2C7 /* LaunchScreen.storyboard */,
@@ -262,9 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BAC98C72033E2F80059D2C7 /* SecondViewController.swift in Sources */,
+				1BAC98C72033E2F80059D2C7 /* AddicksViewController.swift in Sources */,
 				1BAC98C32033E2F80059D2C7 /* AppDelegate.swift in Sources */,
-				1BAC98C52033E2F80059D2C7 /* FirstViewController.swift in Sources */,
+				1BAC98C52033E2F80059D2C7 /* AllTrailsViewController.swift in Sources */,
+				1BAC98F32033EB9D0059D2C7 /* BarkerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BAC98DA2033E2F80059D2C7 /* KatyHikingTrailsTests.swift in Sources */,
+				1BAC98F42033EB9D0059D2C7 /* BarkerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BAC98E52033E2F80059D2C7 /* KatyHikingTrailsUITests.swift in Sources */,
+				1BAC98F52033EB9D0059D2C7 /* BarkerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
