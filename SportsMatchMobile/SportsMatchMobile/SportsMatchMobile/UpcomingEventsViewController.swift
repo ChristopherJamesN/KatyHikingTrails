@@ -25,14 +25,11 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
             } else {
                 if let data = data {
                     DispatchQueue.main.async {
-                        let json = try? JSONSerialization.jsonObject(with: data, options: [])
-                        var jsonArray = String()
-                        if let json = String(data: data, encoding: .utf8) {
-                            print(json)
-                            jsonArray = json
+                        let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [[String: Any]]
+                        self.publicJsonArray = json!!
+                        for object in self.publicJsonArray {
+                            print(object)
                         }
-                        self.publicJsonArray += jsonArray
-                        print(self.publicJsonArray)
                         self.UpcomingEventsTableView.reloadData()
                     }
                 } else {
@@ -47,7 +44,7 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         super.didReceiveMemoryWarning()
     }
     
-    var publicJsonArray = String()
+    var publicJsonArray = [[String: Any]]()
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return publicJsonArray.count
@@ -64,9 +61,9 @@ class UpcomingEventsViewController: UIViewController, UITableViewDataSource, UIT
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? EventTableViewCell  else {
             fatalError("The dequeued cell is not an instance of EventTableViewCell.")
         }
-        cell.ParticipantsLabel.text = publicJsonArray
-        cell.StartTimeLabel.text = publicJsonArray
-        cell.SportLabel.text = "text"
+        cell.ParticipantsLabel.text = publicJsonArray[indexPath.row]["participants"] as? String
+        cell.StartTimeLabel.text = publicJsonArray[indexPath.row]["commence"] as? String
+        cell.SportLabel.text = publicJsonArray[indexPath.row]["sport"] as? String
         return cell
     }
     
