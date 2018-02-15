@@ -11,6 +11,8 @@ import UIKit
 class TrailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
+    @IBOutlet weak var AddicksTrailNameLabel: UILabel!
+    @IBOutlet weak var BarkerTrailNameLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

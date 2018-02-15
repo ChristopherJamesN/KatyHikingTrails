@@ -64,7 +64,7 @@ class AddicksViewController: UIViewController, UITableViewDataSource, UITableVie
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TrailTableViewCell  else {
             fatalError("The dequeued cell is not an instance of TrailTableViewCell.")
         }
-        cell.TrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
+        cell.AddicksTrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
         return cell
     }
 
