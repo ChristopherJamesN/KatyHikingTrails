@@ -64,7 +64,7 @@ class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableVie
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? TrailTableViewCell  else {
             fatalError("The dequeued cell is not an instance of TrailTableViewCell.")
         }
-        cell.TrailNameLabel.text = publicJsonArray[indexPath.row]["participants"] as? String
+        cell.TrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
         return cell
     }
 
