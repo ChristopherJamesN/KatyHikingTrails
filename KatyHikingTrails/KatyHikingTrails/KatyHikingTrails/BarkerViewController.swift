@@ -65,6 +65,8 @@ class BarkerViewController: UIViewController, UITableViewDataSource, UITableView
             fatalError("The dequeued cell is not an instance of TrailTableViewCell.")
         }
         cell.BarkerTrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
+        cell.BarkerTrailsDescriptionLabel.text = publicJsonArray[indexPath.row]["description"] as? String
+        cell.BarkerTrailsMapLinkLabel.text = publicJsonArray[indexPath.row]["maplink"] as? String
         return cell
     }
 

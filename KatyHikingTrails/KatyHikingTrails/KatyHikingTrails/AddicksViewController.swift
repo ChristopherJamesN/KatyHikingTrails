@@ -65,6 +65,8 @@ class AddicksViewController: UIViewController, UITableViewDataSource, UITableVie
             fatalError("The dequeued cell is not an instance of TrailTableViewCell.")
         }
         cell.AddicksTrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
+        cell.AddicksTrailsDescriptionLabel.text = publicJsonArray[indexPath.row]["description"] as? String
+        cell.AddicksTrailsMapLinkLabel.text = publicJsonArray[indexPath.row]["maplink"] as? String
         return cell
     }
 
