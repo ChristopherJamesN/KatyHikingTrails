@@ -21,6 +21,9 @@
 		1BAC98F7203511420059D2C7 /* TrailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98F6203511420059D2C7 /* TrailTableViewCell.swift */; };
 		1BAC98F8203511420059D2C7 /* TrailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98F6203511420059D2C7 /* TrailTableViewCell.swift */; };
 		1BAC98F9203511420059D2C7 /* TrailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98F6203511420059D2C7 /* TrailTableViewCell.swift */; };
+		1BAC98FB203713250059D2C7 /* TrailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98FA203713250059D2C7 /* TrailDetailViewController.swift */; };
+		1BAC98FC203713250059D2C7 /* TrailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98FA203713250059D2C7 /* TrailDetailViewController.swift */; };
+		1BAC98FD203713250059D2C7 /* TrailDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAC98FA203713250059D2C7 /* TrailDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,7 @@
 		1BAC98E62033E2F80059D2C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarkerViewController.swift; sourceTree = "<group>"; };
 		1BAC98F6203511420059D2C7 /* TrailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailTableViewCell.swift; sourceTree = "<group>"; };
+		1BAC98FA203713250059D2C7 /* TrailDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 				1BAC98C62033E2F80059D2C7 /* AddicksViewController.swift */,
 				1BAC98F22033EB9D0059D2C7 /* BarkerViewController.swift */,
 				1BAC98C82033E2F80059D2C7 /* Main.storyboard */,
+				1BAC98FA203713250059D2C7 /* TrailDetailViewController.swift */,
 				1BAC98F6203511420059D2C7 /* TrailTableViewCell.swift */,
 				1BAC98CB2033E2F80059D2C7 /* Assets.xcassets */,
 				1BAC98CD2033E2F80059D2C7 /* LaunchScreen.storyboard */,
@@ -274,6 +279,7 @@
 			files = (
 				1BAC98C72033E2F80059D2C7 /* AddicksViewController.swift in Sources */,
 				1BAC98C32033E2F80059D2C7 /* AppDelegate.swift in Sources */,
+				1BAC98FB203713250059D2C7 /* TrailDetailViewController.swift in Sources */,
 				1BAC98C52033E2F80059D2C7 /* AllTrailsViewController.swift in Sources */,
 				1BAC98F32033EB9D0059D2C7 /* BarkerViewController.swift in Sources */,
 				1BAC98F7203511420059D2C7 /* TrailTableViewCell.swift in Sources */,
@@ -284,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BAC98FC203713250059D2C7 /* TrailDetailViewController.swift in Sources */,
 				1BAC98F8203511420059D2C7 /* TrailTableViewCell.swift in Sources */,
 				1BAC98DA2033E2F80059D2C7 /* KatyHikingTrailsTests.swift in Sources */,
 				1BAC98F42033EB9D0059D2C7 /* BarkerViewController.swift in Sources */,
@@ -294,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BAC98FD203713250059D2C7 /* TrailDetailViewController.swift in Sources */,
 				1BAC98F9203511420059D2C7 /* TrailTableViewCell.swift in Sources */,
 				1BAC98E52033E2F80059D2C7 /* KatyHikingTrailsUITests.swift in Sources */,
 				1BAC98F52033EB9D0059D2C7 /* BarkerViewController.swift in Sources */,
