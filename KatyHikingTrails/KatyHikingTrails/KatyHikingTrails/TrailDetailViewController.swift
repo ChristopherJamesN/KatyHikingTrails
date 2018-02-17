@@ -10,6 +10,9 @@ import UIKit
 
 class TrailDetailViewController: UIViewController {
 
+    @IBOutlet weak var TrailNameLabel: UILabel!
+    @IBOutlet weak var TrailMaplinkLabel: UILabel!
+    @IBOutlet weak var TrailDescriptionTextView: UITextView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
