@@ -13,15 +13,18 @@ class TrailDetailViewController: UIViewController {
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var TrailMaplinkLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
+    var Name = ""
+    var MapLink = ""
+    var Description = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        TrailNameLabel.text = self.Name
+        TrailMaplinkLabel.text = self.MapLink
+        TrailDescriptionTextView.text = self.Description
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 

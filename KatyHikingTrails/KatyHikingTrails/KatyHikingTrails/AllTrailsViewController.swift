@@ -69,6 +69,29 @@ class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.AllTrailsMapLinkLabel.text = publicJsonArray[indexPath.row]["maplink"] as? String
         return cell
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard let newTrailDetailViewController = segue.destination as? TrailDetailViewController else {
+            fatalError("Unexpected destination: \(segue.destination)")
+        }
+        
+        guard let selectedTrailCell = sender as? TrailTableViewCell else {
+            fatalError("Unexpected sender: \(sender)")
+        }
+        
+        guard let indexPath = AllTrailsTableView.indexPath(for: selectedTrailCell) else {
+            fatalError("The selected cell is not being displayed by the table")
+        }
+        
+        let selectedName = publicJsonArray[indexPath.row]["name"] as? String
+        newTrailDetailViewController.Name = selectedName!
+        let selectedDescription = publicJsonArray[indexPath.row]["description"] as? String
+        newTrailDetailViewController.Description = (selectedDescription)!
+        let selectedMaplink = publicJsonArray[indexPath.row]["maplink"] as? String
+        newTrailDetailViewController.MapLink = (selectedMaplink)!
+    }
 
 
 }
