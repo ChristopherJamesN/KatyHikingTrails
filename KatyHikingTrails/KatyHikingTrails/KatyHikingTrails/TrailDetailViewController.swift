@@ -7,20 +7,23 @@
 //
 
 import UIKit
+import WebKit
 
 class TrailDetailViewController: UIViewController {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
-    @IBOutlet weak var TrailMaplinkLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
+    @IBOutlet var GoogleMapWebView: WKWebView!
     var Name = ""
     var MapLink = ""
     var Description = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         TrailNameLabel.text = self.Name
-        TrailMaplinkLabel.text = self.MapLink
         TrailDescriptionTextView.text = self.Description
+        let url = NSURL (string: self.MapLink);
+        let requestObj = NSURLRequest(url: url! as URL);
+        GoogleMapWebView.load(requestObj as URLRequest);
     }
 
     override func didReceiveMemoryWarning() {
