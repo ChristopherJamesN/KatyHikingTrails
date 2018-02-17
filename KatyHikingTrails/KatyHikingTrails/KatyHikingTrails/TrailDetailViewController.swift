@@ -21,6 +21,7 @@ class TrailDetailViewController: UIViewController {
         super.viewDidLoad()
         TrailNameLabel.text = self.Name
         TrailDescriptionTextView.text = self.Description
+        TrailDescriptionTextView.isEditable = false
         let url = NSURL (string: self.MapLink);
         if url != nil{
             let requestObj = NSURLRequest(url: url! as URL);
@@ -31,16 +32,4 @@ class TrailDetailViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
