@@ -78,7 +78,7 @@ class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         
         guard let selectedTrailCell = sender as? TrailTableViewCell else {
-            fatalError("Unexpected sender: \(sender)")
+            fatalError("Unexpected sender: \(sender ?? "Nothing")")
         }
         
         guard let indexPath = AllTrailsTableView.indexPath(for: selectedTrailCell) else {

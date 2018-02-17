@@ -78,7 +78,7 @@ class AddicksViewController: UIViewController, UITableViewDataSource, UITableVie
         }
         
         guard let selectedTrailCell = sender as? TrailTableViewCell else {
-            fatalError("Unexpected sender: \(sender)")
+            fatalError("Unexpected sender: \(sender ?? "Nothing")")
         }
         
         guard let indexPath = AddicksTrailsTableView.indexPath(for: selectedTrailCell) else {

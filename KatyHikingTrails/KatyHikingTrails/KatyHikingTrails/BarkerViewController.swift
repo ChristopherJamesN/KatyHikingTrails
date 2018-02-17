@@ -78,7 +78,7 @@ class BarkerViewController: UIViewController, UITableViewDataSource, UITableView
         }
         
         guard let selectedTrailCell = sender as? TrailTableViewCell else {
-            fatalError("Unexpected sender: \(sender)")
+            fatalError("Unexpected sender: \(sender ?? "nothing")")
         }
         
         guard let indexPath = BarkerTrailsTableView.indexPath(for: selectedTrailCell) else {
