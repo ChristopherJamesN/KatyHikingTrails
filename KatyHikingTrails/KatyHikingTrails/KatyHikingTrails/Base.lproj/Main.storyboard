@@ -57,6 +57,7 @@
                                             <outlet property="AllTrailsDescriptionLabel" destination="CIh-Rf-hVX" id="O41-kg-1uy"/>
                                             <outlet property="AllTrailsMapLinkLabel" destination="CQM-Gi-BoF" id="tYK-Ud-bPz"/>
                                             <outlet property="TrailNameLabel" destination="5Yr-Js-dDG" id="g9h-0e-bDG"/>
+                                            <segue destination="r6l-q1-afd" kind="showDetail" id="tHI-Tq-UIe"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -121,6 +122,7 @@
                                             <outlet property="BarkerTrailNameLabel" destination="SiH-WQ-sUe" id="Ii7-ci-2RN"/>
                                             <outlet property="BarkerTrailsDescriptionLabel" destination="5mW-Ro-zyC" id="iaq-lj-UVS"/>
                                             <outlet property="BarkerTrailsMapLinkLabel" destination="D7F-0a-YSw" id="VPe-hh-q6Q"/>
+                                            <segue destination="r6l-q1-afd" kind="showDetail" action="showViewController:sender:" id="RB4-xf-jQO"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -200,6 +202,7 @@
                                             <outlet property="AddicksTrailNameLabel" destination="WuW-Oz-HzD" id="BKI-Um-j95"/>
                                             <outlet property="AddicksTrailsDescriptionLabel" destination="0Qh-4U-Nc0" id="zgn-lJ-tl3"/>
                                             <outlet property="AddicksTrailsMapLinkLabel" destination="ait-si-QfE" id="UGd-cv-Siq"/>
+                                            <segue destination="r6l-q1-afd" kind="showDetail" id="ujT-eZ-bgY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -241,4 +244,7 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ujT-eZ-bgY"/>
+    </inferredMetricsTieBreakers>
 </document>
