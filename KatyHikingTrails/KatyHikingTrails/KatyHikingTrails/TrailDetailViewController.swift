@@ -22,8 +22,10 @@ class TrailDetailViewController: UIViewController {
         TrailNameLabel.text = self.Name
         TrailDescriptionTextView.text = self.Description
         let url = NSURL (string: self.MapLink);
-        let requestObj = NSURLRequest(url: url! as URL);
-        GoogleMapWebView.load(requestObj as URLRequest);
+        if url != nil{
+            let requestObj = NSURLRequest(url: url! as URL);
+            GoogleMapWebView.load(requestObj as URLRequest);
+        }
     }
 
     override func didReceiveMemoryWarning() {
