@@ -33,7 +33,7 @@ extension UIColor {
 }
 enum Theme: Int {
     
-    case theme1, theme2
+    case theme1, theme2, Dark
     
     var mainColor: UIColor {
         switch self {
@@ -41,6 +41,8 @@ enum Theme: Int {
             return UIColor().colorFromHexString("ffffff")
         case .theme2:
             return UIColor().colorFromHexString("000000")
+        case .Dark:
+            return UIColor(red:0.13, green:0.13, blue:0.17, alpha:1.0)
         }
     }
     
@@ -50,6 +52,8 @@ enum Theme: Int {
         case .theme1:
             return .default
         case .theme2:
+            return .black
+        case .Dark:
             return .black
         }
     }
@@ -68,6 +72,8 @@ enum Theme: Int {
             return UIColor().colorFromHexString("ffffff")
         case .theme2:
             return UIColor().colorFromHexString("000000")
+        case .Dark:
+            return UIColor(red:0.13, green:0.13, blue:0.17, alpha:1.0)
         }
     }
     
@@ -77,6 +83,8 @@ enum Theme: Int {
             return UIColor().colorFromHexString("ffffff")
         case .theme2:
             return UIColor().colorFromHexString("000000")
+        case .Dark:
+            return UIColor(red:0.13, green:0.13, blue:0.17, alpha:1.0)
         }
     }
     
@@ -86,6 +94,8 @@ enum Theme: Int {
             return UIColor().colorFromHexString("ffffff")
         case .theme2:
             return UIColor().colorFromHexString("000000")
+        case .Dark:
+            return UIColor(red:0.13, green:0.13, blue:0.17, alpha:1.0)
         }
     }
     var subtitleTextColor: UIColor {
@@ -94,6 +104,8 @@ enum Theme: Int {
             return UIColor().colorFromHexString("ffffff")
         case .theme2:
             return UIColor().colorFromHexString("000000")
+        case .Dark:
+            return UIColor(red:0.13, green:0.13, blue:0.17, alpha:1.0)
         }
     }
 }
