@@ -86,10 +86,16 @@ class AddicksViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let selectedName = publicJsonArray[indexPath.row]["name"] as? String
         newTrailDetailViewController.Name = selectedName!
-        let selectedDescription = publicJsonArray[indexPath.row]["description"] as? String
-        newTrailDetailViewController.Description = (selectedDescription)!
-        let selectedMaplink = publicJsonArray[indexPath.row]["maplink"] as? String
-        newTrailDetailViewController.MapLink = (selectedMaplink)!
+        var selectedDescription = "No description available."
+        var selectedMaplink = "No maplink available."
+        if (publicJsonArray[indexPath.row]["description"]) != nil && ((publicJsonArray[indexPath.row]["description"]! as? String) != nil) {
+            selectedDescription = ((publicJsonArray[indexPath.row]["description"] as? String))!
+        }
+        newTrailDetailViewController.Description = selectedDescription
+        if (publicJsonArray[indexPath.row]["maplink"]) != nil && ((publicJsonArray[indexPath.row]["maplink"]! as? String) != nil) {
+            selectedMaplink = ((publicJsonArray[indexPath.row]["maplink"] as? String))!
+        }
+        newTrailDetailViewController.MapLink = selectedMaplink
     }
 
 
