@@ -9,6 +9,8 @@
 import UIKit
 
 class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    let theme = ThemeManager.currentTheme()
 
     @IBOutlet weak var AllTrailsTableView: UITableView!
     override func viewDidLoad() {
@@ -39,7 +41,6 @@ class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableVie
             }
         }
         dataTask.resume()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
