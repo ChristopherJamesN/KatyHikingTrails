@@ -66,7 +66,6 @@ class BarkerViewController: UIViewController, UITableViewDataSource, UITableView
         }
         cell.BarkerTrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
         cell.BarkerTrailsDescriptionLabel.text = publicJsonArray[indexPath.row]["description"] as? String
-        cell.BarkerTrailsMapLinkLabel.text = publicJsonArray[indexPath.row]["maplink"] as? String
         return cell
     }
     

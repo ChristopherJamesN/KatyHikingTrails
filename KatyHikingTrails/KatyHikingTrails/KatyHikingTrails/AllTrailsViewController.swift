@@ -66,7 +66,6 @@ class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableVie
         }
         cell.TrailNameLabel.text = publicJsonArray[indexPath.row]["name"] as? String
         cell.AllTrailsDescriptionLabel.text = publicJsonArray[indexPath.row]["description"] as? String
-        cell.AllTrailsMapLinkLabel.text = publicJsonArray[indexPath.row]["maplink"] as? String
         return cell
     }
     

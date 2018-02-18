@@ -12,13 +12,13 @@ class TrailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var AllTrailsDescriptionLabel: UILabel!
-    @IBOutlet weak var AllTrailsMapLinkLabel: UILabel!
+
     @IBOutlet weak var AddicksTrailNameLabel: UILabel!
     @IBOutlet weak var AddicksTrailsDescriptionLabel: UILabel!
-    @IBOutlet weak var AddicksTrailsMapLinkLabel: UILabel!
+
     @IBOutlet weak var BarkerTrailNameLabel: UILabel!
     @IBOutlet weak var BarkerTrailsDescriptionLabel: UILabel!
-    @IBOutlet weak var BarkerTrailsMapLinkLabel: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

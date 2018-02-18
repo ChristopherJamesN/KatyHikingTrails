@@ -31,21 +31,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Yr-Js-dDG">
-                                                    <rect key="frame" x="15" y="11" width="313" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="287" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIh-Rf-hVX">
-                                                    <rect key="frame" x="15" y="40" width="313" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQM-Gi-BoF">
-                                                    <rect key="frame" x="15" y="69" width="313" height="21"/>
+                                                    <rect key="frame" x="15" y="40" width="287" height="59"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -55,7 +48,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="AllTrailsDescriptionLabel" destination="CIh-Rf-hVX" id="O41-kg-1uy"/>
-                                            <outlet property="AllTrailsMapLinkLabel" destination="CQM-Gi-BoF" id="tYK-Ud-bPz"/>
                                             <outlet property="TrailNameLabel" destination="5Yr-Js-dDG" id="g9h-0e-bDG"/>
                                             <segue destination="r6l-q1-afd" kind="showDetail" id="tHI-Tq-UIe"/>
                                         </connections>
@@ -96,21 +88,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SiH-WQ-sUe">
-                                                    <rect key="frame" x="15" y="11" width="313" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="287" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5mW-Ro-zyC">
-                                                    <rect key="frame" x="15" y="40" width="313" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D7F-0a-YSw">
-                                                    <rect key="frame" x="15" y="69" width="313" height="21"/>
+                                                    <rect key="frame" x="15" y="40" width="287" height="55"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -121,7 +106,6 @@
                                         <connections>
                                             <outlet property="BarkerTrailNameLabel" destination="SiH-WQ-sUe" id="Ii7-ci-2RN"/>
                                             <outlet property="BarkerTrailsDescriptionLabel" destination="5mW-Ro-zyC" id="iaq-lj-UVS"/>
-                                            <outlet property="BarkerTrailsMapLinkLabel" destination="D7F-0a-YSw" id="VPe-hh-q6Q"/>
                                             <segue destination="r6l-q1-afd" kind="showDetail" action="showViewController:sender:" id="RB4-xf-jQO"/>
                                         </connections>
                                     </tableViewCell>
@@ -214,21 +198,14 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuW-Oz-HzD">
-                                                    <rect key="frame" x="15" y="11" width="313" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="287" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Qh-4U-Nc0">
-                                                    <rect key="frame" x="15" y="40" width="313" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ait-si-QfE">
-                                                    <rect key="frame" x="15" y="69" width="313" height="21"/>
+                                                    <rect key="frame" x="15" y="40" width="287" height="60"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -239,7 +216,6 @@
                                         <connections>
                                             <outlet property="AddicksTrailNameLabel" destination="WuW-Oz-HzD" id="BKI-Um-j95"/>
                                             <outlet property="AddicksTrailsDescriptionLabel" destination="0Qh-4U-Nc0" id="zgn-lJ-tl3"/>
-                                            <outlet property="AddicksTrailsMapLinkLabel" destination="ait-si-QfE" id="UGd-cv-Siq"/>
                                             <segue destination="r6l-q1-afd" kind="showDetail" id="ujT-eZ-bgY"/>
                                         </connections>
                                     </tableViewCell>
@@ -283,6 +259,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ujT-eZ-bgY"/>
+        <segue reference="RB4-xf-jQO"/>
     </inferredMetricsTieBreakers>
 </document>
