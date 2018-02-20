@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2e-oq-Xw4">
+                            <tableView clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h2e-oq-Xw4">
                                 <rect key="frame" x="16" y="44" width="359" height="685"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrailTableViewCell" rowHeight="110" id="Und-FM-Ld8" customClass="TrailTableViewCell" customModule="KatyHikingTrails" customModuleProvider="target">
@@ -56,6 +55,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h2e-oq-Xw4" firstAttribute="bottom" secondItem="PQr-Ze-W5v" secondAttribute="bottom" id="MIR-R0-sql"/>
+                            <constraint firstItem="h2e-oq-Xw4" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" id="Zdy-YP-LTX"/>
+                            <constraint firstItem="h2e-oq-Xw4" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" id="tWS-5F-Ye9"/>
+                            <constraint firstItem="h2e-oq-Xw4" firstAttribute="trailing" secondItem="PQr-Ze-W5v" secondAttribute="trailing" id="u1S-Po-iIa"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="All Trails" image="first" id="acW-dT-cKf"/>
@@ -65,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="-1001.2315270935961"/>
+            <point key="canvasLocation" x="750" y="-744"/>
         </scene>
         <!--Barker Trails-->
         <scene sceneID="0of-g4-G3f">
@@ -75,9 +80,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-tB-ffe">
-                                <rect key="frame" x="16" y="20" width="343" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qJq-tB-ffe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrailTableViewCell" rowHeight="106" id="sJb-0h-8jS" customClass="TrailTableViewCell" customModule="KatyHikingTrails" customModuleProvider="target">
@@ -113,6 +117,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xFp-R9-HhO" firstAttribute="bottom" secondItem="qJq-tB-ffe" secondAttribute="bottom" id="0IN-7j-MEH"/>
+                            <constraint firstItem="xFp-R9-HhO" firstAttribute="trailing" secondItem="qJq-tB-ffe" secondAttribute="trailing" id="1Ol-Dc-qNL"/>
+                            <constraint firstItem="qJq-tB-ffe" firstAttribute="leading" secondItem="xFp-R9-HhO" secondAttribute="leading" id="piP-lh-z0k"/>
+                            <constraint firstItem="qJq-tB-ffe" firstAttribute="top" secondItem="16w-Fj-0PB" secondAttribute="top" id="qXV-vt-BYx"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="xFp-R9-HhO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Barker Trails" image="first" id="URm-mm-I8R"/>
@@ -133,7 +143,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QI-t6-5QQ">
-                                <rect key="frame" x="16" y="77" width="343" height="48"/>
+                                <rect key="frame" x="16" y="85" width="343" height="20.333333333333329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -156,7 +166,7 @@
                                 </wkWebViewConfiguration>
                             </wkWebView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-Fa-lDU">
-                                <rect key="frame" x="16" y="43" width="85" height="22"/>
+                                <rect key="frame" x="16" y="43" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -164,7 +174,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL8-oZ-uHc">
-                                <rect key="frame" x="109" y="43" width="250" height="21"/>
+                                <rect key="frame" x="57.999999999999993" y="43" width="85.333333333333314" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -192,9 +202,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oFO-oH-K9n">
-                                <rect key="frame" x="16" y="20" width="343" height="598"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oFO-oH-K9n">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TrailTableViewCell" rowHeight="111" id="ito-1f-qA9" customClass="TrailTableViewCell" customModule="KatyHikingTrails" customModuleProvider="target">
@@ -230,6 +239,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oFO-oH-K9n" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="0pM-0o-EED"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="oFO-oH-K9n" secondAttribute="trailing" id="Lrg-bM-Fj7"/>
+                            <constraint firstItem="oFO-oH-K9n" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" id="ZC9-Mh-TrY"/>
+                            <constraint firstItem="O1u-W8-tvY" firstAttribute="bottom" secondItem="oFO-oH-K9n" secondAttribute="bottom" id="mAu-8v-dLt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Addicks Trails" image="second" id="cPa-gy-q4n"/>
@@ -239,7 +254,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="749.60000000000002" y="1053.6945812807883"/>
+            <point key="canvasLocation" x="750" y="725"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
