@@ -8,12 +8,14 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 class TrailDetailViewController: UIViewController {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
+    var locationManager = CLLocationManager.init()
     
     var Name = ""
     var MapLink = ""
@@ -23,6 +25,13 @@ class TrailDetailViewController: UIViewController {
         TrailNameLabel.text = self.Name
         TrailDescriptionTextView.text = self.Description
         TrailDescriptionTextView.isEditable = false
+    
+        MapView.mapType = .standard
+        MapView.showsUserLocation = true
+        MapView.showsScale = true
+        MapView.showsCompass = true
+        locationManager.requestWhenInUseAuthorization()
+        
         let url = NSURL (string: self.MapLink);
         if url != nil{
             let requestObj = NSURLRequest(url: url! as URL);

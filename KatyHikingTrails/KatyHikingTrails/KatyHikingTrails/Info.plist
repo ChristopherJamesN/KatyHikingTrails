@@ -26,6 +26,81 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>MKMapView and MKMapViewDelegate Introduction in Swift
+November 17, 2016 by Matthew 3 Comments
+
+If you need to show a map to your users in iOS, one way to accomplish this is to use the MKMapView class. Mix this with the MKMapViewDelegate and you have the ability to detect movement on the map, detect the state of the map such as failure loading it as well as several other items you can monitor.
+
+In this tutorial we’ll add a map to the view, allow the current location of the phone to be zoomed to, and allow the user to switch between the different map types which are available meaning Standard, Satellite, and Hybrid. We will also learn how to implement a delegate method and have the map move each time the user moves.
+
+MKMapView Tutorial
+The first step is to create a Single View Application by opening Xcode and creating the new project. You can follow this tutorial if you are unsure how to create a new project. Make sure you select the language as Swift. You can uncheck unit tests, core data, and other optional extras.
+
+Navigate to Main.storyboard and drag out a UIToolBar and seat it at the bottom of the view. Click the UIBarButtonItem (named Item) and rename the text attribute to “Current Location”. Drag out a Segment control and put that on the toolbar also. You might choose to use a flexible spacer between the button on the left and the segment to force them to the left and right edges of the toolbar.
+
+segment-attributesSelect the Segment View and change the segments to 3. Rename each segment as follows:
+
+Segment 0: Standard
+Segment 1: Satellite
+Segment 2: Hybrid
+
+The next task is to drag a Map Kit View in to the view. I made mine fill the rest of the view above the toolbar.
+
+mapview-storyboard
+When complete you should have something similar to that shown above.
+
+We now need to create some IBOutlet and IBAction properties. Open up the assistant editor which is found on the top toolbar over on the far right just (second set of controls from the right). Click the middle button which is 2 intersecting circles.
+
+Ctrl+drag from the MapView to just below the class declaration to create an IBOutlet. Call it mapView and hit connect.
+
+outletDo the same from the current location and segment control. I dragged to just below viewDidLoad. Instead of leaving “outlet” as the default you need to change the connection to “Action”. I also changed the type to UISegmentedControl and gave it the name of mapTypeChanged. Click connect when done.
+
+You can do the same for the Current Location button, but rather than selecting the type as UISegmentedControl (which isn’t available) you can select UIBarButtonItem from the dropdown.
+
+Implementing MapView in the ViewController.swift Class
+The storyboard is complete. It’s time to write some code to get the project working.
+
+Step 1:
+First we import MapKit as well as CoreLocation. The reason we need to implement CoreLocation is so that we can use it to request authorisation for using the users location.
+
+
+import MapKit
+import CoreLocation
+1
+2
+import MapKit
+import CoreLocation
+Create a property for a CLLocationManager as follows (which can be put just below the mapView IBOutlet):
+
+
+var locationManager = CLLocationManager.init()
+1
+var locationManager = CLLocationManager.init()
+In viewDidLoad add the following:
+
+
+locationManager.requestWhenInUseAuthorization()
+
+mapView.mapType = .standard
+mapView.showsUserLocation = true
+mapView.showsScale = true
+mapView.showsCompass = true
+1
+2
+3
+4
+5
+6
+locationManager.requestWhenInUseAuthorization()
+ 
+mapView.mapType = .standard
+mapView.showsUserLocation = true
+mapView.showsScale = true
+mapView.showsCompass = true
+Line 1 is where we request from the user permission to use their location. As well as adding this line, you also need to add a key and description to the info.plist file for your app. The key to add is:
+
+NSLocationWhenInUseUsageDescription</key>
+	<string>This app uses your location to fiind you directions to the nearest trail.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
