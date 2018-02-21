@@ -10,12 +10,12 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class TrailDetailViewController: UIViewController, MKMapViewDelegate {
+class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
-    var locationManager = CLLocationManager.init()
+    let locationManager = CLLocationManager()
     
     var Name = ""
     var MapLink = ""
@@ -26,12 +26,13 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate {
         TrailDescriptionTextView.text = self.Description
         TrailDescriptionTextView.isEditable = false
         
+        locationManager.requestWhenInUseAuthorization()
+        
         MapView.delegate = self
         MapView.mapType = .standard
         MapView.showsUserLocation = true
         MapView.showsScale = true
         MapView.showsCompass = true
-        locationManager.requestWhenInUseAuthorization()
         let InitialLocation = CLLocationCoordinate2D(latitude: 29.7491301, longitude: -95.7142318)
         
         let request = MKDirectionsRequest()
@@ -51,11 +52,6 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate {
             }
         }
     }
-    
-    func mapView(_ MapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        MapView.setCenter(userLocation.coordinate, animated: true)
-    }
-    
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
         renderer.strokeColor = UIColor.blue

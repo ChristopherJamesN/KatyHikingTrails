@@ -101,6 +101,8 @@ Line 1 is where we request from the user permission to use their location. As we
 
 NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses your location to fiind you directions to the nearest trail.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>This app uses your location to fiind you directions to the nearest trail.</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
