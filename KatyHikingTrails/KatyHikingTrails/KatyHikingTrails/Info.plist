@@ -19,13 +19,9 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>6</string>
+	<string>7</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
-	<key>UILaunchStoryboardName</key>
-	<string>LaunchScreen</string>
-	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
 	<key>MKMapView and MKMapViewDelegate Introduction in Swift
 November 17, 2016 by Matthew 3 Comments
 
@@ -103,6 +99,10 @@ NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses your location to fiind you directions to the nearest trail.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses your location to fiind you directions to the nearest trail.</string>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
