@@ -28,12 +28,20 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         locationManager.requestWhenInUseAuthorization()
         
+        var latitude = "25"
+        var longitude = "-96"
+        
         var myStringArr = self.MapLink.components(separatedBy:  ",")
         print(myStringArr)
-        let latitude = myStringArr[2].suffix(10)
-        let longitude = myStringArr[3]
-        print(myStringArr[2].suffix(10))
-        print(myStringArr[3])
+        if self.MapLink == "No maplink available." {
+            latitude = "25"
+            longitude = "-96"
+        } else {
+            latitude = String(myStringArr[2].suffix(10))
+            longitude = myStringArr[3]
+            print(myStringArr[2].suffix(10))
+            print(myStringArr[3])
+        }
         let DestinationLocation = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)
         
         MapView.delegate = self
