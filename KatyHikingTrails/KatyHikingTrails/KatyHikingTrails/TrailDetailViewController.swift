@@ -28,16 +28,24 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         locationManager.requestWhenInUseAuthorization()
         
+        var myStringArr = self.MapLink.components(separatedBy:  ",")
+        print(myStringArr)
+        let latitude = myStringArr[2].suffix(10)
+        let longitude = myStringArr[3]
+        print(myStringArr[2].suffix(10))
+        print(myStringArr[3])
+        let DestinationLocation = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)
+        
         MapView.delegate = self
         MapView.mapType = .standard
         MapView.showsUserLocation = true
         MapView.showsScale = true
         MapView.showsCompass = true
-        let InitialLocation = CLLocationCoordinate2D(latitude: 29.7491301, longitude: -95.7142318)
+        //let InitialLocation = CLLocationCoordinate2D(latitude: 29.7491301, longitude: -95.7142318)
         
         let request = MKDirectionsRequest()
         request.source = MKMapItem(placemark: MKPlacemark(coordinate: MapView.userLocation.coordinate, addressDictionary: nil))
-        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: InitialLocation, addressDictionary: nil))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: DestinationLocation, addressDictionary: nil))
         request.requestsAlternateRoutes = true
         request.transportType = .automobile
         
