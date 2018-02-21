@@ -7,13 +7,14 @@
 //
 
 import UIKit
-import WebKit
+import MapKit
 
 class TrailDetailViewController: UIViewController {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
-    @IBOutlet var GoogleMapWebView: WKWebView!
+    @IBOutlet weak var MapView: MKMapView!
+    
     var Name = ""
     var MapLink = ""
     var Description = ""
@@ -25,7 +26,6 @@ class TrailDetailViewController: UIViewController {
         let url = NSURL (string: self.MapLink);
         if url != nil{
             let requestObj = NSURLRequest(url: url! as URL);
-            GoogleMapWebView.load(requestObj as URLRequest);
         }
     }
 
