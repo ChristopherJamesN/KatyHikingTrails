@@ -31,12 +31,12 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         var latitude = "25"
         var longitude = "-96"
         
-        var myStringArr = self.MapLink.components(separatedBy:  ",")
-        print(myStringArr)
         if self.MapLink == "No maplink available." {
             latitude = "25"
             longitude = "-96"
         } else {
+            var myStringArr = self.MapLink.components(separatedBy:  ",")
+            print(myStringArr)
             latitude = String(myStringArr[2].suffix(10))
             longitude = myStringArr[3]
             print(myStringArr[2].suffix(10))
