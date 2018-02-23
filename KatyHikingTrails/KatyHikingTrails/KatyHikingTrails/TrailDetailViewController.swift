@@ -28,12 +28,12 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         locationManager.requestWhenInUseAuthorization()
         
-        var latitude = "25"
-        var longitude = "-96"
+        var latitude = "1"
+        var longitude = "-1"
         
         if self.MapLink == "No maplink available." {
-            latitude = "25"
-            longitude = "-96"
+            latitude = "1"
+            longitude = "-1"
         } else {
             var myStringArr = self.MapLink.components(separatedBy:  ",")
             print(myStringArr)
