@@ -69,7 +69,7 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
                 self.MapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
                 for step in route.steps {
                     print(step.instructions)
-                    self.TrailDescriptionTextView.text = step.instructions
+                    self.TrailDirectionsTextView.text = step.instructions
                 }
             }
         }
