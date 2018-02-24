@@ -30,19 +30,16 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         
         locationManager.requestWhenInUseAuthorization()
         
-        var latitude = "1"
-        var longitude = "-1"
+        var latitude = "29"
+        var longitude = "-96"
         
         if self.MapLink == "No maplink available." {
-            latitude = "1"
-            longitude = "-1"
+            latitude = "25"
+            longitude = "-96"
         } else {
             var myStringArr = self.MapLink.components(separatedBy:  ",")
-            print(myStringArr)
             latitude = String(myStringArr[2].suffix(10))
             longitude = myStringArr[3]
-            print(myStringArr[2].suffix(10))
-            print(myStringArr[3])
         }
         let DestinationLocation = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)
         
@@ -51,7 +48,6 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         MapView.showsUserLocation = true
         MapView.showsScale = true
         MapView.showsCompass = true
-        //let InitialLocation = CLLocationCoordinate2D(latitude: 29.7491301, longitude: -95.7142318)
         
         let request = MKDirectionsRequest()
         request.source = MKMapItem(placemark: MKPlacemark(coordinate: MapView.userLocation.coordinate, addressDictionary: nil))
@@ -69,7 +65,7 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
                 self.MapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
                 for step in route.steps {
                     print(step.instructions)
-                    self.TrailDirectionsTextView.text = step.instructions
+                    self.TrailDirectionsTextView.text.append("\n" + step.instructions)
                 }
             }
         }
