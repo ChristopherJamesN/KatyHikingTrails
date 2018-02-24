@@ -134,7 +134,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Trail Description" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-Fa-K1l">
-                                <rect key="frame" x="16" y="113" width="343" height="199"/>
+                                <rect key="frame" x="16" y="649" width="343" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -148,10 +148,6 @@
                                     <segue destination="49e-Tb-3d3" kind="show" id="cb2-Gc-SKU"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-Nw-8eM">
-                                <rect key="frame" x="16" y="320" width="343" height="450"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL8-oZ-uHc">
                                 <rect key="frame" x="145" y="43" width="85.333333333333314" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -159,6 +155,17 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-Nw-8eM">
+                                <rect key="frame" x="16" y="256" width="343" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </mapView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Directions to Trail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-lz-XX8">
+                                <rect key="frame" x="16" y="113" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UQi-U1-OxV"/>
@@ -166,6 +173,7 @@
                     <connections>
                         <outlet property="MapView" destination="FmO-Nw-8eM" id="jW4-zF-ljG"/>
                         <outlet property="TrailDescriptionTextView" destination="SZF-Fa-K1l" id="VCR-hd-Q1W"/>
+                        <outlet property="TrailDirectionsTextView" destination="h7E-lz-XX8" id="fRo-Qx-M6I"/>
                         <outlet property="TrailNameLabel" destination="7QI-t6-5QQ" id="dfT-BT-Fkw"/>
                     </connections>
                 </viewController>

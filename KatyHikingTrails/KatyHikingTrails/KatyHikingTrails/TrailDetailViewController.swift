@@ -15,6 +15,7 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
+    @IBOutlet weak var TrailDirectionsTextView: UITextView!
     let locationManager = CLLocationManager()
     
     var Name = ""
@@ -25,6 +26,7 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         TrailNameLabel.text = self.Name
         TrailDescriptionTextView.text = self.Description
         TrailDescriptionTextView.isEditable = false
+        TrailDirectionsTextView.isEditable = false
         
         locationManager.requestWhenInUseAuthorization()
         
@@ -65,6 +67,10 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
             for route in unwrappedResponse.routes {
                 self.MapView.add(route.polyline)
                 self.MapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                for step in route.steps {
+                    print(step.instructions)
+                    self.TrailDescriptionTextView.text = step.instructions
+                }
             }
         }
     }
