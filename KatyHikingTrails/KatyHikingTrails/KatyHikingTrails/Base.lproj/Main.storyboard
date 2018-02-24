@@ -126,62 +126,48 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QI-t6-5QQ">
-                                <rect key="frame" x="16" y="85" width="343" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QI-t6-5QQ">
+                                <rect key="frame" x="16" y="85" width="45" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Trail Description" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-Fa-K1l">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Trail Description" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-Fa-K1l">
                                 <rect key="frame" x="16" y="649" width="343" height="135"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-Fa-lDU">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-Fa-lDU">
                                 <rect key="frame" x="16" y="43" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="cb2-Gc-SKU"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Detail View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL8-oZ-uHc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detail View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BL8-oZ-uHc">
                                 <rect key="frame" x="145" y="43" width="85.333333333333314" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-Nw-8eM">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-Nw-8eM">
                                 <rect key="frame" x="16" y="256" width="343" height="385"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Directions to Trail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-lz-XX8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Directions to Trail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-lz-XX8">
                                 <rect key="frame" x="16" y="113" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="UQi-U1-OxV" firstAttribute="trailing" secondItem="h7E-lz-XX8" secondAttribute="trailing" constant="16" id="40c-Wy-ZcV"/>
-                            <constraint firstItem="7QI-t6-5QQ" firstAttribute="top" secondItem="yIW-Fa-lDU" secondAttribute="bottom" constant="12" id="4u8-Vg-VaH"/>
-                            <constraint firstItem="UQi-U1-OxV" firstAttribute="trailing" secondItem="FmO-Nw-8eM" secondAttribute="trailing" constant="16" id="BfX-Cq-YLO"/>
-                            <constraint firstItem="UQi-U1-OxV" firstAttribute="trailing" secondItem="SZF-Fa-K1l" secondAttribute="trailing" constant="16" id="Eqk-5h-SHl"/>
-                            <constraint firstItem="yIW-Fa-lDU" firstAttribute="top" secondItem="5hP-h3-UHY" secondAttribute="top" constant="43" id="IJj-Me-x64"/>
-                            <constraint firstItem="yIW-Fa-lDU" firstAttribute="leading" secondItem="UQi-U1-OxV" secondAttribute="leading" constant="16" id="KRH-RA-ezZ"/>
-                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="top" secondItem="FmO-Nw-8eM" secondAttribute="bottom" constant="8" id="Pvl-2j-bFT"/>
-                            <constraint firstItem="BL8-oZ-uHc" firstAttribute="leading" secondItem="yIW-Fa-lDU" secondAttribute="trailing" constant="95" id="QrN-nQ-Usf"/>
-                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="leading" secondItem="UQi-U1-OxV" secondAttribute="leading" constant="16" id="Sop-5e-3bQ"/>
-                            <constraint firstItem="h7E-lz-XX8" firstAttribute="top" secondItem="7QI-t6-5QQ" secondAttribute="bottom" constant="8" id="ZV3-9S-tvy"/>
-                            <constraint firstAttribute="bottom" secondItem="SZF-Fa-K1l" secondAttribute="bottom" constant="28" id="ZzM-eB-P15"/>
-                            <constraint firstItem="h7E-lz-XX8" firstAttribute="leading" secondItem="UQi-U1-OxV" secondAttribute="leading" constant="16" id="gjt-Si-MJp"/>
-                            <constraint firstItem="FmO-Nw-8eM" firstAttribute="top" secondItem="h7E-lz-XX8" secondAttribute="bottom" constant="15" id="hh7-mj-aDi"/>
-                            <constraint firstItem="UQi-U1-OxV" firstAttribute="trailing" secondItem="BL8-oZ-uHc" secondAttribute="trailing" constant="144.66999999999999" id="io7-l5-GfC"/>
-                            <constraint firstItem="BL8-oZ-uHc" firstAttribute="top" secondItem="5hP-h3-UHY" secondAttribute="top" constant="43" id="m1h-i8-ebB"/>
-                            <constraint firstItem="UQi-U1-OxV" firstAttribute="trailing" secondItem="7QI-t6-5QQ" secondAttribute="trailing" constant="16" id="pQ7-RY-TnT"/>
-                            <constraint firstItem="7QI-t6-5QQ" firstAttribute="leading" secondItem="UQi-U1-OxV" secondAttribute="leading" constant="16" id="ugr-w6-Fd7"/>
-                            <constraint firstItem="FmO-Nw-8eM" firstAttribute="leading" secondItem="UQi-U1-OxV" secondAttribute="leading" constant="16" id="ziB-ug-FhW"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UQi-U1-OxV"/>
                     </view>
                     <connections>
@@ -274,6 +260,6 @@
         <image name="second" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ujT-eZ-bgY"/>
+        <segue reference="tHI-Tq-UIe"/>
     </inferredMetricsTieBreakers>
 </document>
