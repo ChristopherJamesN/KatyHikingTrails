@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -126,41 +127,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QI-t6-5QQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7QI-t6-5QQ">
                                 <rect key="frame" x="16" y="85" width="343" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Trail Description" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-Fa-K1l">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Trail Description" translatesAutoresizingMaskIntoConstraints="NO" id="SZF-Fa-K1l">
                                 <rect key="frame" x="16" y="649" width="343" height="135"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="135" id="Px9-1w-ZSI"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-Fa-lDU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yIW-Fa-lDU">
                                 <rect key="frame" x="16" y="43" width="66" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="49e-Tb-3d3" kind="show" id="cb2-Gc-SKU"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-Nw-8eM">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FmO-Nw-8eM">
                                 <rect key="frame" x="16" y="256" width="343" height="385"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="385" id="2As-mO-x7A"/>
+                                </constraints>
                             </mapView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Directions to Trail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-lz-XX8">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Directions to Trail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h7E-lz-XX8">
                                 <rect key="frame" x="16" y="113" width="343" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="nWH-RU-e6k"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="trailing" secondItem="7QI-t6-5QQ" secondAttribute="trailing" id="6Za-s5-HQL"/>
+                            <constraint firstItem="h7E-lz-XX8" firstAttribute="leading" secondItem="FmO-Nw-8eM" secondAttribute="leading" id="9rQ-T5-oPK"/>
+                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="trailing" secondItem="5hP-h3-UHY" secondAttribute="trailingMargin" id="KOG-5P-05u"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="SZF-Fa-K1l" secondAttribute="bottom" constant="-6" id="LHb-vh-kKP"/>
+                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="leading" secondItem="7QI-t6-5QQ" secondAttribute="leading" id="MU7-Gq-Y5T"/>
+                            <constraint firstItem="FmO-Nw-8eM" firstAttribute="top" secondItem="h7E-lz-XX8" secondAttribute="bottom" constant="15" id="QVW-nq-f4Z"/>
+                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="top" secondItem="FmO-Nw-8eM" secondAttribute="bottom" constant="8" symbolic="YES" id="Vuf-48-b7H"/>
+                            <constraint firstItem="UQi-U1-OxV" firstAttribute="trailing" secondItem="yIW-Fa-lDU" secondAttribute="trailing" constant="293" id="WhZ-n1-193"/>
+                            <constraint firstItem="7QI-t6-5QQ" firstAttribute="top" secondItem="yIW-Fa-lDU" secondAttribute="bottom" constant="12" id="YYE-J9-0bq"/>
+                            <constraint firstItem="h7E-lz-XX8" firstAttribute="leading" secondItem="7QI-t6-5QQ" secondAttribute="leading" id="dSH-oh-tcF"/>
+                            <constraint firstItem="SZF-Fa-K1l" firstAttribute="leading" secondItem="5hP-h3-UHY" secondAttribute="leadingMargin" id="ge5-ts-obI"/>
+                            <constraint firstItem="yIW-Fa-lDU" firstAttribute="leading" secondItem="7QI-t6-5QQ" secondAttribute="leading" id="myJ-iI-Bs4"/>
+                            <constraint firstItem="h7E-lz-XX8" firstAttribute="trailing" secondItem="FmO-Nw-8eM" secondAttribute="trailing" id="pI4-Hr-NJM"/>
+                            <constraint firstItem="h7E-lz-XX8" firstAttribute="top" secondItem="7QI-t6-5QQ" secondAttribute="bottom" constant="8" symbolic="YES" id="utq-Sk-XHU"/>
+                            <constraint firstItem="h7E-lz-XX8" firstAttribute="trailing" secondItem="7QI-t6-5QQ" secondAttribute="trailing" id="y5S-se-A7m"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UQi-U1-OxV"/>
                     </view>
                     <connections>
