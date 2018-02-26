@@ -11,13 +11,10 @@ import UIKit
 class TrailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var TrailNameLabel: UILabel!
-    @IBOutlet weak var AllTrailsDescriptionLabel: UILabel!
 
     @IBOutlet weak var AddicksTrailNameLabel: UILabel!
-    @IBOutlet weak var AddicksTrailsDescriptionLabel: UILabel!
 
     @IBOutlet weak var BarkerTrailNameLabel: UILabel!
-    @IBOutlet weak var BarkerTrailsDescriptionLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
