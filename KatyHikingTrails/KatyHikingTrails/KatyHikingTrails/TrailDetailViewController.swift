@@ -8,16 +8,13 @@
 
 import UIKit
 import MapKit
-import CoreLocation
 
-class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class TrailDetailViewController: UIViewController, MKMapViewDelegate{
 
     @IBOutlet weak var TrailNameLabel: UILabel!
     @IBOutlet weak var TrailDescriptionTextView: UITextView!
     @IBOutlet weak var MapView: MKMapView!
     @IBOutlet weak var TrailDirectionsTextView: UITextView!
-    
-    let locationManager = CLLocationManager()
     
     
     var Name = ""
@@ -38,8 +35,6 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         MapView.showsScale = true
         MapView.showsCompass = true
         
-        locationManager.requestWhenInUseAuthorization()
-        
         var latitude = "29"
         var longitude = "-96"
         
@@ -49,6 +44,9 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate, CLLocation
         } else {
             var myStringArr = self.MapLink.components(separatedBy:  ",")
             latitude = String(myStringArr[2].suffix(10))
+            if latitude.first == "@" {
+                latitude.remove(at: latitude.startIndex)
+            }
             longitude = myStringArr[3]
         }
         let DestinationLocation = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)

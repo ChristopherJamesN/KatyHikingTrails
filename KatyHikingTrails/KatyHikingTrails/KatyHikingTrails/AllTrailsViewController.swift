@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import CoreLocation
 
-class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, CLLocationManagerDelegate {
     
     let theme = ThemeManager.currentTheme()
+    let locationManager = CLLocationManager()
 
     @IBOutlet weak var AllTrailsTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        locationManager.requestWhenInUseAuthorization()
         
         AllTrailsTableView.delegate = self
         AllTrailsTableView.dataSource = self
