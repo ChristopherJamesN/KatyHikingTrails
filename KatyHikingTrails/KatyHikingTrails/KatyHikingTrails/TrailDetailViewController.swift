@@ -34,7 +34,9 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
         MapView.showsUserLocation = true
         MapView.showsScale = true
         MapView.showsCompass = true
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         var latitude = "29"
         var longitude = "-96"
         
@@ -60,7 +62,7 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
         let directions = MKDirections(request: request)
         
         directions.calculate { [unowned self] response, error in
-            guard let unwrappedResponse = response else { return }
+            guard let unwrappedResponse = response else { self.setNeedsFocusUpdate(); return; }
             
             for route in unwrappedResponse.routes {
                 self.MapView.add(route.polyline)
