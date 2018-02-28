@@ -76,6 +76,8 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         let renderer = MKPolylineRenderer(polyline: overlay as! MKPolyline)
         renderer.strokeColor = UIColor.blue
+        renderer.fillColor = UIColor.red
+        renderer.lineWidth = 2
         return renderer
     }
 
