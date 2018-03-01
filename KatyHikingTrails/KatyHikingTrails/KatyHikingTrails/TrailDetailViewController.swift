@@ -62,7 +62,7 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
         let directions = MKDirections(request: request)
         
         directions.calculate { [unowned self] response, error in
-            guard let unwrappedResponse = response else { self.TrailDirectionsTextView.text = "No directions available"; return; }
+            guard let unwrappedResponse = response else { self.TrailDirectionsTextView.text = "No directions currently available."; return; }
             
             for route in unwrappedResponse.routes {
                 self.TrailDirectionsTextView.text = ""
@@ -82,6 +82,46 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
         renderer.fillColor = UIColor.red
         renderer.lineWidth = 2
         return renderer
+    }
+    
+    func mapViewDidFinishLoadingMap(_ mapView: MKMapView) {
+        var latitude = "29"
+        var longitude = "-96"
+        
+        if self.MapLink == "No maplink available." {
+            latitude = "25"
+            longitude = "-96"
+        } else {
+            var myStringArr = self.MapLink.components(separatedBy:  ",")
+            latitude = String(myStringArr[2].suffix(10))
+            if latitude.first == "@" {
+                latitude.remove(at: latitude.startIndex)
+            }
+            longitude = myStringArr[3]
+        }
+        let DestinationLocation = CLLocationCoordinate2D(latitude: Double(latitude)!, longitude: Double(longitude)!)
+        
+        let request = MKDirectionsRequest()
+        request.source = MKMapItem(placemark: MKPlacemark(coordinate: MapView.userLocation.coordinate, addressDictionary: nil))
+        request.destination = MKMapItem(placemark: MKPlacemark(coordinate: DestinationLocation, addressDictionary: nil))
+        request.requestsAlternateRoutes = false
+        request.transportType = .automobile
+        
+        let directions = MKDirections(request: request)
+        
+        directions.calculate { [unowned self] response, error in
+            guard let unwrappedResponse = response else { self.TrailDirectionsTextView.text = "No directions currently available."; return; }
+            
+            for route in unwrappedResponse.routes {
+                self.TrailDirectionsTextView.text = ""
+                self.MapView.add(route.polyline)
+                self.MapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
+                for (index, step) in route.steps.enumerated() {
+                    print(step.instructions)
+                    self.TrailDirectionsTextView.text.append("\(index + 1). " + step.instructions + "\n")
+                }
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
