@@ -68,9 +68,9 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
                 self.TrailDirectionsTextView.text = ""
                 self.MapView.add(route.polyline)
                 self.MapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
-                for step in route.steps {
+                for (index, step) in route.steps.enumerated() {
                     print(step.instructions)
-                    self.TrailDirectionsTextView.text.append(step.instructions + "\n")
+                    self.TrailDirectionsTextView.text.append("\(index + 1). " + step.instructions + "\n")
                 }
             }
         }
