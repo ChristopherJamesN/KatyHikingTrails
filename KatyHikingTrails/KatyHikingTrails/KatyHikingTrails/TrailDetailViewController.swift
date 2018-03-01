@@ -62,14 +62,15 @@ class TrailDetailViewController: UIViewController, MKMapViewDelegate{
         let directions = MKDirections(request: request)
         
         directions.calculate { [unowned self] response, error in
-            guard let unwrappedResponse = response else { self.setNeedsFocusUpdate(); return; }
+            guard let unwrappedResponse = response else { self.TrailDirectionsTextView.text = "No directions available"; return; }
             
             for route in unwrappedResponse.routes {
+                self.TrailDirectionsTextView.text = ""
                 self.MapView.add(route.polyline)
                 self.MapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true)
                 for step in route.steps {
                     print(step.instructions)
-                    self.TrailDirectionsTextView.text.append("\n" + step.instructions)
+                    self.TrailDirectionsTextView.text.append(step.instructions + "\n")
                 }
             }
         }
