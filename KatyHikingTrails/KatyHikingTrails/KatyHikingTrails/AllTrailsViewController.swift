@@ -24,7 +24,7 @@ class AllTrailsViewController: UIViewController, UITableViewDelegate, UITableVie
         AllTrailsTableView.dataSource = self
         
         let session = URLSession.shared
-        let eventsURL = URL(string:"https://katy-hiking-trails.herokuapp.com/trails.json")!
+        let eventsURL = URL(string:"https://katy-hiking-trails.fly.dev/trails.json")!
         let dataTask = session.dataTask(with: eventsURL) {
             (data: Data?, response: URLResponse?, error: Error?) in
             if let error = error {

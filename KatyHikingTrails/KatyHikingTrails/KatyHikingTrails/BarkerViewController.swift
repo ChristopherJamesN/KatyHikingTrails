@@ -18,7 +18,7 @@ class BarkerViewController: UIViewController, UITableViewDataSource, UITableView
         BarkerTrailsTableView.dataSource = self
         
         let session = URLSession.shared
-        let eventsURL = URL(string:"https://katy-hiking-trails.herokuapp.com/trails/barker.json")!
+        let eventsURL = URL(string:"https://katy-hiking-trails.fly.dev/trails/barker.json")!
         let dataTask = session.dataTask(with: eventsURL) {
             (data: Data?, response: URLResponse?, error: Error?) in
             if let error = error {

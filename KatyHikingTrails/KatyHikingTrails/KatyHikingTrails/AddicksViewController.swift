@@ -18,7 +18,7 @@ class AddicksViewController: UIViewController, UITableViewDataSource, UITableVie
         AddicksTrailsTableView.dataSource = self
         
         let session = URLSession.shared
-        let eventsURL = URL(string:"https://katy-hiking-trails.herokuapp.com/trails/addicks.json")!
+        let eventsURL = URL(string:"https://katy-hiking-trails.fly.dev/trails/addicks.json")!
         let dataTask = session.dataTask(with: eventsURL) {
             (data: Data?, response: URLResponse?, error: Error?) in
             if let error = error {
